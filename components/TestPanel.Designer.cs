@@ -1,4 +1,6 @@
-﻿namespace event_management_system.components
+﻿using System.Windows.Forms;
+
+namespace event_management_system.components
 {
     partial class TestPanel
     {
@@ -28,19 +30,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            homePanel = new Panel();
+            filter = new ComboBox();
+            addEventBtn = new Button();
+            events = new DataGridView();
+            eName = new DataGridViewTextBoxColumn();
+            location = new DataGridViewTextBoxColumn();
+            startDate = new DataGridViewTextBoxColumn();
+            endDate = new DataGridViewTextBoxColumn();
+            status = new DataGridViewTextBoxColumn();
+            type = new DataGridViewTextBoxColumn();
+            actions = new DataGridViewTextBoxColumn();
             label1 = new Label();
-            panel1.SuspendLayout();
+            homePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)events).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // homePanel
             // 
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1010, 605);
-            panel1.TabIndex = 0;
+            homePanel.BackColor = Color.FromArgb(241, 241, 241);
+            homePanel.Controls.Add(filter);
+            homePanel.Controls.Add(addEventBtn);
+            homePanel.Controls.Add(events);
+            homePanel.Controls.Add(label1);
+            homePanel.Dock = DockStyle.Fill;
+            homePanel.Location = new Point(0, 0);
+            homePanel.Name = "homePanel";
+            homePanel.Size = new Size(1010, 605);
+            homePanel.TabIndex = 0;
+            // 
+            // filter
+            // 
+            filter.FormattingEnabled = true;
+            filter.Location = new Point(758, 26);
+            filter.Name = "filter";
+            filter.Size = new Size(101, 28);
+            filter.TabIndex = 9;
+            filter.Text = "Filter";
+            // 
+            // addEventBtn
+            // 
+            addEventBtn.Location = new Point(890, 19);
+            addEventBtn.Name = "addEventBtn";
+            addEventBtn.Size = new Size(101, 40);
+            addEventBtn.TabIndex = 8;
+            addEventBtn.Text = "Add Event";
+            addEventBtn.UseVisualStyleBackColor = true;
+            addEventBtn.Click += addEventBtn_Click;
+            // 
+            // events
+            // 
+            events.AllowUserToOrderColumns = true;
+            events.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            events.Columns.AddRange(new DataGridViewColumn[] { eName, location, startDate, endDate, status, type, actions });
+            events.Location = new Point(0, 121);
+            events.Name = "events";
+            events.RowHeadersWidth = 51;
+            events.Size = new Size(1010, 484);
+            events.TabIndex = 7;
+            // 
+            // eName
+            // 
+            eName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            eName.HeaderText = "Event Name";
+            eName.MinimumWidth = 6;
+            eName.Name = "eName";
+            eName.SortMode = DataGridViewColumnSortMode.Programmatic;
+            // 
+            // location
+            // 
+            location.HeaderText = "Location";
+            location.MinimumWidth = 6;
+            location.Name = "location";
+            location.Width = 125;
+            // 
+            // startDate
+            // 
+            startDate.HeaderText = "Start Date";
+            startDate.MinimumWidth = 6;
+            startDate.Name = "startDate";
+            startDate.Width = 125;
+            // 
+            // endDate
+            // 
+            endDate.HeaderText = "End Date";
+            endDate.MinimumWidth = 6;
+            endDate.Name = "endDate";
+            endDate.Width = 125;
+            // 
+            // status
+            // 
+            status.HeaderText = "Status";
+            status.MinimumWidth = 6;
+            status.Name = "status";
+            status.Width = 125;
+            // 
+            // type
+            // 
+            type.HeaderText = "Type";
+            type.MinimumWidth = 6;
+            type.Name = "type";
+            type.Width = 125;
+            // 
+            // actions
+            // 
+            actions.HeaderText = "Actions";
+            actions.MinimumWidth = 6;
+            actions.Name = "actions";
+            actions.Width = 125;
             // 
             // label1
             // 
@@ -56,17 +153,28 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
+            Controls.Add(homePanel);
             Name = "TestPanel";
             Size = new Size(1010, 605);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            homePanel.ResumeLayout(false);
+            homePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)events).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel homePanel;
         private Label label1;
+        private DataGridView events;
+        private DataGridViewTextBoxColumn eName;
+        private DataGridViewTextBoxColumn location;
+        private DataGridViewTextBoxColumn startDate;
+        private DataGridViewTextBoxColumn endDate;
+        private DataGridViewTextBoxColumn status;
+        private DataGridViewTextBoxColumn type;
+        private DataGridViewTextBoxColumn actions;
+        private Button addEventBtn;
+        private ComboBox filter;
     }
 }
