@@ -48,7 +48,7 @@ namespace event_management_system.components
             // 
             // homePanel
             // 
-            homePanel.BackColor = Color.FromArgb(241, 241, 241);
+            homePanel.BackColor = SystemColors.Window;
             homePanel.Controls.Add(filter);
             homePanel.Controls.Add(addEventBtn);
             homePanel.Controls.Add(events);

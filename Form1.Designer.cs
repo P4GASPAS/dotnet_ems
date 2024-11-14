@@ -33,37 +33,30 @@ namespace event_management_system
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             mainPanel = new Panel();
-            sidePanel = new Panel();
             homePageBtn = new Button();
-            topBar = new Panel();
             title = new Label();
             pictureBox1 = new PictureBox();
             testPanel = new TestPanel();
+            topbarPanel = new TopbarPanel();
+            sidebarPanel = new SidebarPanel();
             mainPanel.SuspendLayout();
-            sidePanel.SuspendLayout();
-            topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // mainPanel
             // 
-            mainPanel.Controls.Add(sidePanel);
-            mainPanel.Controls.Add(topBar);
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(0, 0);
             mainPanel.Name = "mainPanel";
             mainPanel.Size = new Size(1262, 673);
             mainPanel.TabIndex = 0;
             mainPanel.Paint += mainPanel_Paint;
-            // 
-            // sidePanel
-            // 
-            sidePanel.BackColor = ColorTranslator.FromHtml("#F1F1F1");
-            sidePanel.Controls.Add(homePageBtn);
-            sidePanel.Location = new Point(0, 68);
-            sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(252, 605);
-            sidePanel.TabIndex = 1;
+            //
+            // SidebarPanel
+            //
+            mainPanel.Controls.Add(sidebarPanel);
+            sidebarPanel.Location = new Point(0, 0);
+            mainPanel.ResumeLayout();
             // 
             // homePageBtn
             // 
@@ -78,16 +71,12 @@ namespace event_management_system
             homePageBtn.Text = "Home";
             homePageBtn.UseVisualStyleBackColor = false;
             homePageBtn.Click += homePageBtn_Click;
-            // 
-            // topBar
-            // 
-            topBar.BackColor = Color.FromArgb(241, 241, 241);
-            topBar.Controls.Add(title);
-            topBar.Controls.Add(pictureBox1);
-            topBar.Location = new Point(0, 0);
-            topBar.Name = "topBar";
-            topBar.Size = new Size(1262, 68);
-            topBar.TabIndex = 0;
+            //
+            // topbarPanel
+            //
+            mainPanel.Controls.Add(topbarPanel);
+            topbarPanel.Location = new Point(252, 0);
+            mainPanel.ResumeLayout();
             // 
             // title
             // 
@@ -126,9 +115,6 @@ namespace event_management_system
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Event Management System";
             mainPanel.ResumeLayout(false);
-            sidePanel.ResumeLayout(false);
-            topBar.ResumeLayout(false);
-            topBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -136,11 +122,11 @@ namespace event_management_system
         #endregion
 
         private Panel mainPanel;
-        private Panel topBar;
-        private Panel sidePanel;
         private Button homePageBtn;
         private PictureBox pictureBox1;
         private Label title;
         private TestPanel testPanel;
+        private TopbarPanel topbarPanel;
+        private SidebarPanel sidebarPanel;
     }
 }
