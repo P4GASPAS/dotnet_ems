@@ -36,7 +36,7 @@ namespace event_management_system
             homePageBtn = new Button();
             title = new Label();
             pictureBox1 = new PictureBox();
-            testPanel = new TestPanel();
+            testPanel = new TestPanel(mainPanel);
             topbarPanel = new TopbarPanel();
             sidebarPanel = new SidebarPanel();
             mainPanel.SuspendLayout();
@@ -121,7 +121,7 @@ namespace event_management_system
 
         #endregion
 
-        private Panel mainPanel;
+        public Panel mainPanel;
         private Button homePageBtn;
         private PictureBox pictureBox1;
         private Label title;

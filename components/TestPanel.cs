@@ -20,6 +20,7 @@ namespace event_management_system.components
         private void addEventBtn_Click(object sender, EventArgs e)
         {
             EventRegistration eventRegistration = new EventRegistration();
+            
             //mainPanel.SuspendLayout();
             //mainPanel.Controls.Add(eventRegistration);
             //eventRegistration.Location = new Point(252, 68);
