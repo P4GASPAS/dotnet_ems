@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             txtbxSearchRegistrants = new Guna.UI2.WinForms.Guna2TextBox();
             lblTittle = new Label();
             registrantsData = new DataGridView();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
-            filter = new ComboBox();
             ticketID = new DataGridViewTextBoxColumn();
             eventID = new DataGridViewTextBoxColumn();
             registantFN = new DataGridViewTextBoxColumn();
             registantLN = new DataGridViewTextBoxColumn();
             registantTicketype = new DataGridViewTextBoxColumn();
             registantAction = new DataGridViewTextBoxColumn();
+            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
+            filter = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)registrantsData).BeginInit();
             SuspendLayout();
@@ -64,7 +64,7 @@
             // 
             // txtbxSearchRegistrants
             // 
-            txtbxSearchRegistrants.CustomizableEdges = customizableEdges9;
+            txtbxSearchRegistrants.CustomizableEdges = customizableEdges1;
             txtbxSearchRegistrants.DefaultText = "search registrants";
             txtbxSearchRegistrants.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtbxSearchRegistrants.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -79,7 +79,7 @@
             txtbxSearchRegistrants.PasswordChar = '\0';
             txtbxSearchRegistrants.PlaceholderText = "";
             txtbxSearchRegistrants.SelectedText = "";
-            txtbxSearchRegistrants.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtbxSearchRegistrants.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtbxSearchRegistrants.Size = new Size(225, 33);
             txtbxSearchRegistrants.TabIndex = 55;
             // 
@@ -100,44 +100,16 @@
             registrantsData.BackgroundColor = Color.Azure;
             registrantsData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             registrantsData.Columns.AddRange(new DataGridViewColumn[] { ticketID, eventID, registantFN, registantLN, registantTicketype, registantAction });
-            registrantsData.Location = new Point(2, 91);
+            registrantsData.Location = new Point(1, 91);
             registrantsData.Name = "registrantsData";
             registrantsData.RowHeadersWidth = 62;
             registrantsData.Size = new Size(1007, 422);
             registrantsData.TabIndex = 53;
             // 
-            // btnAddEvent
-            // 
-            btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges11;
-            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAddEvent.FillColor = Color.LimeGreen;
-            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddEvent.ForeColor = Color.Black;
-            btnAddEvent.Location = new Point(798, 532);
-            btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnAddEvent.Size = new Size(190, 40);
-            btnAddEvent.TabIndex = 52;
-            btnAddEvent.Text = "Add Registrants";
-            // 
-            // filter
-            // 
-            filter.FormattingEnabled = true;
-            filter.Items.AddRange(new object[] { "VIP", "Regular" });
-            filter.Location = new Point(863, 33);
-            filter.Margin = new Padding(4);
-            filter.Name = "filter";
-            filter.Size = new Size(125, 33);
-            filter.TabIndex = 51;
-            filter.Text = "Filter";
-            // 
             // ticketID
             // 
             ticketID.HeaderText = "ID";
+            ticketID.MinimumWidth = 8;
             ticketID.Name = "ticketID";
             ticketID.Width = 150;
             // 
@@ -175,6 +147,35 @@
             registantAction.MinimumWidth = 8;
             registantAction.Name = "registantAction";
             registantAction.Width = 150;
+            // 
+            // btnAddEvent
+            // 
+            btnAddEvent.BorderRadius = 20;
+            btnAddEvent.CustomizableEdges = customizableEdges3;
+            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAddEvent.FillColor = Color.LimeGreen;
+            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddEvent.ForeColor = Color.Black;
+            btnAddEvent.Location = new Point(798, 532);
+            btnAddEvent.Name = "btnAddEvent";
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnAddEvent.Size = new Size(190, 40);
+            btnAddEvent.TabIndex = 52;
+            btnAddEvent.Text = "Add Registrant";
+            // 
+            // filter
+            // 
+            filter.FormattingEnabled = true;
+            filter.Items.AddRange(new object[] { "VIP", "Regular" });
+            filter.Location = new Point(863, 33);
+            filter.Margin = new Padding(4);
+            filter.Name = "filter";
+            filter.Size = new Size(125, 33);
+            filter.TabIndex = 51;
+            filter.Text = "Filter";
             // 
             // ManageRegistrants
             // 
