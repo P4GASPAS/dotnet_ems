@@ -55,24 +55,27 @@ namespace event_management_system.components
             homePanel.Controls.Add(label1);
             homePanel.Dock = DockStyle.Fill;
             homePanel.Location = new Point(0, 0);
+            homePanel.Margin = new Padding(4, 4, 4, 4);
             homePanel.Name = "homePanel";
-            homePanel.Size = new Size(1010, 605);
+            homePanel.Size = new Size(1262, 756);
             homePanel.TabIndex = 0;
             // 
             // filter
             // 
             filter.FormattingEnabled = true;
-            filter.Location = new Point(758, 26);
+            filter.Location = new Point(948, 32);
+            filter.Margin = new Padding(4, 4, 4, 4);
             filter.Name = "filter";
-            filter.Size = new Size(101, 28);
+            filter.Size = new Size(125, 33);
             filter.TabIndex = 9;
             filter.Text = "Filter";
             // 
             // addEventBtn
             // 
-            addEventBtn.Location = new Point(890, 19);
+            addEventBtn.Location = new Point(1112, 24);
+            addEventBtn.Margin = new Padding(4, 4, 4, 4);
             addEventBtn.Name = "addEventBtn";
-            addEventBtn.Size = new Size(101, 40);
+            addEventBtn.Size = new Size(126, 50);
             addEventBtn.TabIndex = 8;
             addEventBtn.Text = "Add Event";
             addEventBtn.UseVisualStyleBackColor = true;
@@ -83,10 +86,11 @@ namespace event_management_system.components
             events.AllowUserToOrderColumns = true;
             events.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             events.Columns.AddRange(new DataGridViewColumn[] { eName, location, startDate, endDate, status, type, actions });
-            events.Location = new Point(0, 121);
+            events.Location = new Point(0, 151);
+            events.Margin = new Padding(4, 4, 4, 4);
             events.Name = "events";
             events.RowHeadersWidth = 51;
-            events.Size = new Size(1010, 484);
+            events.Size = new Size(1262, 605);
             events.TabIndex = 7;
             // 
             // eName
@@ -143,19 +147,22 @@ namespace event_management_system.components
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(233, 112);
+            label1.Location = new Point(291, 140);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(151, 41);
+            label1.Size = new Size(178, 48);
             label1.TabIndex = 0;
             label1.Text = "Test panel";
             // 
             // TestPanel
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(homePanel);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "TestPanel";
-            Size = new Size(1010, 605);
+            Size = new Size(1262, 756);
+            Load += TestPanel_Load;
             homePanel.ResumeLayout(false);
             homePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)events).EndInit();

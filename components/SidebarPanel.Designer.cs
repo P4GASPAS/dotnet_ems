@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SidebarPanel));
             LogoPic = new PictureBox();
             Gatherwell = new Label();
-            btnEvent = new Button();
-            btnUser = new Button();
-            btnTicket = new Button();
-            btnRegistrant = new Button();
-            btnDashboard = new Button();
-            btnTransaction = new Button();
             panel1 = new Panel();
+            btnIconHome = new FontAwesome.Sharp.IconButton();
+            btnIconStaff = new FontAwesome.Sharp.IconButton();
+            btnIconEvents = new FontAwesome.Sharp.IconButton();
+            btnIconTicket = new FontAwesome.Sharp.IconButton();
+            btnIconRegistrants = new FontAwesome.Sharp.IconButton();
+            btnIconTransaction = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)LogoPic).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -44,10 +45,11 @@
             // LogoPic
             // 
             LogoPic.ErrorImage = null;
-            LogoPic.Image = Properties.Resources.logo;
-            LogoPic.Location = new Point(17, 7);
+            LogoPic.Image = (Image)resources.GetObject("LogoPic.Image");
+            LogoPic.Location = new Point(32, 24);
+            LogoPic.Margin = new Padding(4, 4, 4, 4);
             LogoPic.Name = "LogoPic";
-            LogoPic.Size = new Size(185, 169);
+            LogoPic.Size = new Size(231, 211);
             LogoPic.SizeMode = PictureBoxSizeMode.Zoom;
             LogoPic.TabIndex = 1;
             LogoPic.TabStop = false;
@@ -56,128 +58,146 @@
             // 
             Gatherwell.AutoSize = true;
             Gatherwell.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Gatherwell.Location = new Point(18, 184);
+            Gatherwell.Location = new Point(46, 239);
+            Gatherwell.Margin = new Padding(4, 0, 4, 0);
             Gatherwell.Name = "Gatherwell";
-            Gatherwell.Size = new Size(173, 23);
+            Gatherwell.Size = new Size(207, 28);
             Gatherwell.TabIndex = 2;
             Gatherwell.Text = "Welcome, Admin";
             // 
-            // btnEvent
-            // 
-            btnEvent.BackColor = Color.SkyBlue;
-            btnEvent.FlatStyle = FlatStyle.Popup;
-            btnEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEvent.Image = Properties.Resources.calendar;
-            btnEvent.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEvent.Location = new Point(0, 380);
-            btnEvent.Name = "btnEvent";
-            btnEvent.Padding = new Padding(27, 0, 49, 0);
-            btnEvent.Size = new Size(252, 71);
-            btnEvent.TabIndex = 9;
-            btnEvent.Text = "Event";
-            btnEvent.UseVisualStyleBackColor = false;
-            // 
-            // btnUser
-            // 
-            btnUser.BackColor = Color.SkyBlue;
-            btnUser.FlatStyle = FlatStyle.Popup;
-            btnUser.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnUser.Image = Properties.Resources.user2;
-            btnUser.ImageAlign = ContentAlignment.MiddleLeft;
-            btnUser.Location = new Point(0, 313);
-            btnUser.Name = "btnUser";
-            btnUser.Padding = new Padding(27, 0, 49, 0);
-            btnUser.Size = new Size(252, 71);
-            btnUser.TabIndex = 10;
-            btnUser.Text = "Staff";
-            btnUser.UseVisualStyleBackColor = false;
-            // 
-            // btnTicket
-            // 
-            btnTicket.BackColor = Color.SkyBlue;
-            btnTicket.FlatStyle = FlatStyle.Popup;
-            btnTicket.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTicket.Image = Properties.Resources.ticket;
-            btnTicket.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTicket.Location = new Point(0, 448);
-            btnTicket.Name = "btnTicket";
-            btnTicket.Padding = new Padding(27, 0, 49, 0);
-            btnTicket.Size = new Size(252, 71);
-            btnTicket.TabIndex = 11;
-            btnTicket.Text = "Ticket";
-            btnTicket.UseVisualStyleBackColor = false;
-            // 
-            // btnRegistrant
-            // 
-            btnRegistrant.BackColor = Color.SkyBlue;
-            btnRegistrant.FlatStyle = FlatStyle.Popup;
-            btnRegistrant.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRegistrant.Image = Properties.Resources.user2;
-            btnRegistrant.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistrant.Location = new Point(0, 514);
-            btnRegistrant.Name = "btnRegistrant";
-            btnRegistrant.Padding = new Padding(27, 0, 0, 0);
-            btnRegistrant.Size = new Size(252, 71);
-            btnRegistrant.TabIndex = 12;
-            btnRegistrant.Text = "Registrants";
-            btnRegistrant.UseCompatibleTextRendering = true;
-            btnRegistrant.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            btnDashboard.BackColor = Color.SkyBlue;
-            btnDashboard.FlatStyle = FlatStyle.Popup;
-            btnDashboard.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDashboard.Image = Properties.Resources.home;
-            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDashboard.Location = new Point(0, 247);
-            btnDashboard.Name = "btnDashboard";
-            btnDashboard.Padding = new Padding(27, 0, 49, 0);
-            btnDashboard.Size = new Size(252, 71);
-            btnDashboard.TabIndex = 8;
-            btnDashboard.Text = "Home";
-            btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // btnTransaction
-            // 
-            btnTransaction.BackColor = Color.SkyBlue;
-            btnTransaction.FlatStyle = FlatStyle.Popup;
-            btnTransaction.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTransaction.Image = Properties.Resources.dollar;
-            btnTransaction.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTransaction.Location = new Point(0, 584);
-            btnTransaction.Name = "btnTransaction";
-            btnTransaction.Padding = new Padding(27, 0, 0, 0);
-            btnTransaction.Size = new Size(252, 71);
-            btnTransaction.TabIndex = 13;
-            btnTransaction.Text = "Transaction";
-            btnTransaction.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
+            panel1.Controls.Add(btnIconTransaction);
+            panel1.Controls.Add(btnIconRegistrants);
+            panel1.Controls.Add(btnIconTicket);
+            panel1.Controls.Add(btnIconEvents);
+            panel1.Controls.Add(btnIconStaff);
+            panel1.Controls.Add(btnIconHome);
             panel1.Controls.Add(LogoPic);
             panel1.Controls.Add(Gatherwell);
-            panel1.Controls.Add(btnEvent);
-            panel1.Controls.Add(btnUser);
-            panel1.Controls.Add(btnTicket);
-            panel1.Controls.Add(btnRegistrant);
-            panel1.Controls.Add(btnDashboard);
-            panel1.Controls.Add(btnTransaction);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(252, 673);
+            panel1.Size = new Size(315, 841);
             panel1.TabIndex = 14;
+            // 
+            // btnIconHome
+            // 
+            btnIconHome.BackColor = Color.SkyBlue;
+            btnIconHome.FlatAppearance.BorderSize = 0;
+            btnIconHome.FlatStyle = FlatStyle.Flat;
+            btnIconHome.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnIconHome.IconChar = FontAwesome.Sharp.IconChar.House;
+            btnIconHome.IconColor = Color.Black;
+            btnIconHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIconHome.Location = new Point(0, 306);
+            btnIconHome.Name = "btnIconHome";
+            btnIconHome.Padding = new Padding(0, 0, 60, 0);
+            btnIconHome.Size = new Size(315, 68);
+            btnIconHome.TabIndex = 14;
+            btnIconHome.Text = "Home";
+            btnIconHome.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnIconHome.UseVisualStyleBackColor = false;
+            // 
+            // btnIconStaff
+            // 
+            btnIconStaff.BackColor = Color.SkyBlue;
+            btnIconStaff.FlatAppearance.BorderSize = 0;
+            btnIconStaff.FlatStyle = FlatStyle.Flat;
+            btnIconStaff.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnIconStaff.IconChar = FontAwesome.Sharp.IconChar.UserLarge;
+            btnIconStaff.IconColor = Color.Black;
+            btnIconStaff.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIconStaff.Location = new Point(1, 375);
+            btnIconStaff.Name = "btnIconStaff";
+            btnIconStaff.Padding = new Padding(0, 0, 70, 0);
+            btnIconStaff.Size = new Size(315, 68);
+            btnIconStaff.TabIndex = 15;
+            btnIconStaff.Text = "Staff";
+            btnIconStaff.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnIconStaff.UseVisualStyleBackColor = false;
+            // 
+            // btnIconEvents
+            // 
+            btnIconEvents.BackColor = Color.SkyBlue;
+            btnIconEvents.FlatAppearance.BorderSize = 0;
+            btnIconEvents.FlatStyle = FlatStyle.Flat;
+            btnIconEvents.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnIconEvents.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            btnIconEvents.IconColor = Color.Black;
+            btnIconEvents.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIconEvents.Location = new Point(2, 444);
+            btnIconEvents.Name = "btnIconEvents";
+            btnIconEvents.Padding = new Padding(0, 0, 60, 0);
+            btnIconEvents.Size = new Size(312, 68);
+            btnIconEvents.TabIndex = 16;
+            btnIconEvents.Text = "Events";
+            btnIconEvents.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnIconEvents.UseVisualStyleBackColor = false;
+            // 
+            // btnIconTicket
+            // 
+            btnIconTicket.BackColor = Color.SkyBlue;
+            btnIconTicket.FlatAppearance.BorderSize = 0;
+            btnIconTicket.FlatStyle = FlatStyle.Flat;
+            btnIconTicket.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnIconTicket.IconChar = FontAwesome.Sharp.IconChar.TicketSimple;
+            btnIconTicket.IconColor = Color.Black;
+            btnIconTicket.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIconTicket.Location = new Point(2, 513);
+            btnIconTicket.Name = "btnIconTicket";
+            btnIconTicket.Padding = new Padding(0, 0, 50, 0);
+            btnIconTicket.Size = new Size(313, 68);
+            btnIconTicket.TabIndex = 17;
+            btnIconTicket.Text = "Tickets";
+            btnIconTicket.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnIconTicket.UseVisualStyleBackColor = false;
+            // 
+            // btnIconRegistrants
+            // 
+            btnIconRegistrants.BackColor = Color.SkyBlue;
+            btnIconRegistrants.FlatAppearance.BorderSize = 0;
+            btnIconRegistrants.FlatStyle = FlatStyle.Flat;
+            btnIconRegistrants.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnIconRegistrants.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            btnIconRegistrants.IconColor = Color.Black;
+            btnIconRegistrants.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIconRegistrants.Location = new Point(1, 582);
+            btnIconRegistrants.Name = "btnIconRegistrants";
+            btnIconRegistrants.Size = new Size(315, 68);
+            btnIconRegistrants.TabIndex = 18;
+            btnIconRegistrants.Text = "Registrants";
+            btnIconRegistrants.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnIconRegistrants.UseVisualStyleBackColor = false;
+            // 
+            // btnIconTransaction
+            // 
+            btnIconTransaction.BackColor = Color.SkyBlue;
+            btnIconTransaction.FlatAppearance.BorderSize = 0;
+            btnIconTransaction.FlatStyle = FlatStyle.Flat;
+            btnIconTransaction.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnIconTransaction.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
+            btnIconTransaction.IconColor = Color.Black;
+            btnIconTransaction.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIconTransaction.Location = new Point(2, 651);
+            btnIconTransaction.Name = "btnIconTransaction";
+            btnIconTransaction.Size = new Size(312, 68);
+            btnIconTransaction.TabIndex = 19;
+            btnIconTransaction.Text = "Transactions";
+            btnIconTransaction.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnIconTransaction.UseVisualStyleBackColor = false;
             // 
             // SidebarPanel
             // 
             AccessibleName = "SideBar";
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
             Controls.Add(panel1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "SidebarPanel";
-            Size = new Size(252, 673);
+            Size = new Size(315, 841);
             ((System.ComponentModel.ISupportInitialize)LogoPic).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -188,12 +208,12 @@
 
         private System.Windows.Forms.PictureBox LogoPic;
         private System.Windows.Forms.Label Gatherwell;
-        private System.Windows.Forms.Button btnEvent;
-        private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Button btnTicket;
-        private System.Windows.Forms.Button btnRegistrant;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnTransaction;
         private Panel panel1;
+        private FontAwesome.Sharp.IconButton btnIconHome;
+        private FontAwesome.Sharp.IconButton btnIconStaff;
+        private FontAwesome.Sharp.IconButton btnIconTicket;
+        private FontAwesome.Sharp.IconButton btnIconEvents;
+        private FontAwesome.Sharp.IconButton btnIconTransaction;
+        private FontAwesome.Sharp.IconButton btnIconRegistrants;
     }
 }

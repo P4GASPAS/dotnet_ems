@@ -16,5 +16,10 @@ namespace event_management_system.components
         {
             InitializeComponent();
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
