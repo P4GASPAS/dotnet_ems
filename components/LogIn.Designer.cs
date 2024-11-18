@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
+            btnLogIn = new Guna.UI2.WinForms.Guna2Button();
+            txtbxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             txtbxUsername = new Guna.UI2.WinForms.Guna2TextBox();
             lblPassword = new Label();
             iconPicturePass = new FontAwesome.Sharp.IconPictureBox();
@@ -44,8 +46,6 @@
             tagline = new Label();
             Gatherwell = new Label();
             LogoPic = new PictureBox();
-            txtbxPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            btnLogIn = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPicturePass).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureUsername).BeginInit();
@@ -71,6 +71,50 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1262, 673);
             panel1.TabIndex = 0;
+            // 
+            // btnLogIn
+            // 
+            btnLogIn.BorderRadius = 20;
+            btnLogIn.CustomizableEdges = customizableEdges1;
+            btnLogIn.DisabledState.BorderColor = Color.DarkGray;
+            btnLogIn.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLogIn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLogIn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLogIn.FillColor = Color.DodgerBlue;
+            btnLogIn.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogIn.ForeColor = Color.Black;
+            btnLogIn.Location = new Point(570, 531);
+            btnLogIn.Name = "btnLogIn";
+            btnLogIn.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnLogIn.Size = new Size(124, 40);
+            btnLogIn.TabIndex = 11;
+            btnLogIn.Text = "LOG IN";
+            // 
+            // txtbxPassword
+            // 
+            txtbxPassword.BackColor = Color.Transparent;
+            txtbxPassword.BorderRadius = 10;
+            txtbxPassword.CustomizableEdges = customizableEdges3;
+            txtbxPassword.DefaultText = "";
+            txtbxPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbxPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbxPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbxPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbxPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxPassword.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbxPassword.ForeColor = Color.Black;
+            txtbxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxPassword.Location = new Point(500, 478);
+            txtbxPassword.Margin = new Padding(4, 5, 4, 5);
+            txtbxPassword.Name = "txtbxPassword";
+            txtbxPassword.PasswordChar = '●';
+            txtbxPassword.PlaceholderForeColor = Color.LightCyan;
+            txtbxPassword.PlaceholderText = "";
+            txtbxPassword.SelectedText = "";
+            txtbxPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtbxPassword.Size = new Size(264, 33);
+            txtbxPassword.TabIndex = 10;
+            txtbxPassword.UseSystemPasswordChar = true;
             // 
             // txtbxUsername
             // 
@@ -180,50 +224,6 @@
             LogoPic.SizeMode = PictureBoxSizeMode.Zoom;
             LogoPic.TabIndex = 2;
             LogoPic.TabStop = false;
-            // 
-            // txtbxPassword
-            // 
-            txtbxPassword.BackColor = Color.Transparent;
-            txtbxPassword.BorderRadius = 10;
-            txtbxPassword.CustomizableEdges = customizableEdges3;
-            txtbxPassword.DefaultText = "";
-            txtbxPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxPassword.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbxPassword.ForeColor = Color.Black;
-            txtbxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxPassword.Location = new Point(500, 478);
-            txtbxPassword.Margin = new Padding(4, 5, 4, 5);
-            txtbxPassword.Name = "txtbxPassword";
-            txtbxPassword.PasswordChar = '●';
-            txtbxPassword.PlaceholderForeColor = Color.LightCyan;
-            txtbxPassword.PlaceholderText = "";
-            txtbxPassword.SelectedText = "";
-            txtbxPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtbxPassword.Size = new Size(264, 33);
-            txtbxPassword.TabIndex = 10;
-            txtbxPassword.UseSystemPasswordChar = true;
-            // 
-            // btnLogIn
-            // 
-            btnLogIn.BorderRadius = 20;
-            btnLogIn.CustomizableEdges = customizableEdges1;
-            btnLogIn.DisabledState.BorderColor = Color.DarkGray;
-            btnLogIn.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnLogIn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnLogIn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnLogIn.FillColor = Color.DodgerBlue;
-            btnLogIn.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogIn.ForeColor = SystemColors.ButtonHighlight;
-            btnLogIn.Location = new Point(563, 531);
-            btnLogIn.Name = "btnLogIn";
-            btnLogIn.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnLogIn.Size = new Size(136, 42);
-            btnLogIn.TabIndex = 11;
-            btnLogIn.Text = "LOG IN";
             // 
             // LogIn
             // 

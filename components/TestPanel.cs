@@ -31,5 +31,10 @@ namespace event_management_system.components
         {
 
         }
+
+        private void events_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

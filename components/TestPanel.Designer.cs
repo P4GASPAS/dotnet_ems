@@ -48,14 +48,14 @@ namespace event_management_system.components
             // 
             // homePanel
             // 
-            homePanel.BackColor = SystemColors.Window;
+            homePanel.BackColor = Color.Azure;
             homePanel.Controls.Add(filter);
             homePanel.Controls.Add(addEventBtn);
             homePanel.Controls.Add(events);
             homePanel.Controls.Add(label1);
             homePanel.Dock = DockStyle.Fill;
             homePanel.Location = new Point(0, 0);
-            homePanel.Margin = new Padding(4, 4, 4, 4);
+            homePanel.Margin = new Padding(4);
             homePanel.Name = "homePanel";
             homePanel.Size = new Size(1262, 756);
             homePanel.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace event_management_system.components
             // 
             filter.FormattingEnabled = true;
             filter.Location = new Point(948, 32);
-            filter.Margin = new Padding(4, 4, 4, 4);
+            filter.Margin = new Padding(4);
             filter.Name = "filter";
             filter.Size = new Size(125, 33);
             filter.TabIndex = 9;
@@ -73,7 +73,7 @@ namespace event_management_system.components
             // addEventBtn
             // 
             addEventBtn.Location = new Point(1112, 24);
-            addEventBtn.Margin = new Padding(4, 4, 4, 4);
+            addEventBtn.Margin = new Padding(4);
             addEventBtn.Name = "addEventBtn";
             addEventBtn.Size = new Size(126, 50);
             addEventBtn.TabIndex = 8;
@@ -84,14 +84,16 @@ namespace event_management_system.components
             // events
             // 
             events.AllowUserToOrderColumns = true;
+            events.BackgroundColor = Color.Azure;
             events.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             events.Columns.AddRange(new DataGridViewColumn[] { eName, location, startDate, endDate, status, type, actions });
             events.Location = new Point(0, 151);
-            events.Margin = new Padding(4, 4, 4, 4);
+            events.Margin = new Padding(4);
             events.Name = "events";
             events.RowHeadersWidth = 51;
             events.Size = new Size(1262, 605);
             events.TabIndex = 7;
+            events.CellContentClick += events_CellContentClick;
             // 
             // eName
             // 
@@ -159,7 +161,7 @@ namespace event_management_system.components
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(homePanel);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "TestPanel";
             Size = new Size(1262, 756);
             Load += TestPanel_Load;

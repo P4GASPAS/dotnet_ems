@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            btnLogOut = new PictureBox();
+            //btnLogOut = new PictureBox();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)btnLogOut).BeginInit();
+          //  ((System.ComponentModel.ISupportInitialize)btnLogOut).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,18 +47,18 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.Image = Properties.Resources.logout;
-            btnLogOut.Location = new Point(957, 13);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(36, 36);
-            btnLogOut.SizeMode = PictureBoxSizeMode.AutoSize;
-            btnLogOut.TabIndex = 1;
-            btnLogOut.TabStop = false;
+           // btnLogOut.Image = Properties.Resources.logout;
+           // btnLogOut.Location = new Point(957, 13);
+           // btnLogOut.Name = "btnLogOut";
+          //  btnLogOut.Size = new Size(36, 36);
+          //  btnLogOut.SizeMode = PictureBoxSizeMode.AutoSize;
+           // btnLogOut.TabIndex = 1;
+          //  btnLogOut.TabStop = false;
             // 
             // panel1
             // 
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(btnLogOut);
+           // panel1.Controls.Add(btnLogOut);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -73,7 +73,7 @@
             Controls.Add(panel1);
             Name = "TopbarPanel";
             Size = new Size(1010, 68);
-            ((System.ComponentModel.ISupportInitialize)btnLogOut).EndInit();
+          //  ((System.ComponentModel.ISupportInitialize)btnLogOut).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -83,7 +83,7 @@
 
         private System.Windows.Forms.Panel topBarPanel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btnLogOut;
+      //  private System.Windows.Forms.PictureBox btnLogOut;
         private Panel panel1;
     }
 }
