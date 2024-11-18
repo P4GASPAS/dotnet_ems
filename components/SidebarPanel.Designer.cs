@@ -99,6 +99,7 @@
             btnIconHome.Text = "Home";
             btnIconHome.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnIconHome.UseVisualStyleBackColor = false;
+            btnIconHome.Click += btnIconHome_Click;
             // 
             // btnIconStaff
             // 
@@ -117,6 +118,7 @@
             btnIconStaff.Text = "Staff";
             btnIconStaff.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnIconStaff.UseVisualStyleBackColor = false;
+            btnIconStaff.Click += btnIconStaff_Click;
             // 
             // btnIconEvents
             // 
