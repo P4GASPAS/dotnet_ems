@@ -16,5 +16,20 @@ namespace event_management_system.components
         {
             InitializeComponent();
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIconHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIconStaff_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

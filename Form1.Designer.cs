@@ -36,7 +36,7 @@ namespace event_management_system
             homePageBtn = new Button();
             title = new Label();
             pictureBox1 = new PictureBox();
-            testPanel = new TestPanel(mainPanel);
+        //    testPanel = new TestPanel(mainPanel);
             topbarPanel = new TopbarPanel();
             sidebarPanel = new SidebarPanel();
             mainPanel.SuspendLayout();
@@ -99,9 +99,9 @@ namespace event_management_system
             //
             // TestPanel
             //
-            mainPanel.Controls.Add(testPanel);
-            testPanel.Location = new Point(252, 68);
-            mainPanel.ResumeLayout();
+           // mainPanel.Controls.Add(testPanel);
+           // testPanel.Location = new Point(252, 68);
+           // mainPanel.ResumeLayout();
             // 
             // Form1
             // 
