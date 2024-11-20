@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             txtbxSearchTicket = new Guna.UI2.WinForms.Guna2TextBox();
             lblTittle = new Label();
@@ -65,7 +65,7 @@
             // 
             // txtbxSearchTicket
             // 
-            txtbxSearchTicket.CustomizableEdges = customizableEdges5;
+            txtbxSearchTicket.CustomizableEdges = customizableEdges13;
             txtbxSearchTicket.DefaultText = "search ticket";
             txtbxSearchTicket.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtbxSearchTicket.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -80,7 +80,7 @@
             txtbxSearchTicket.PasswordChar = '\0';
             txtbxSearchTicket.PlaceholderText = "";
             txtbxSearchTicket.SelectedText = "";
-            txtbxSearchTicket.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtbxSearchTicket.ShadowDecoration.CustomizableEdges = customizableEdges14;
             txtbxSearchTicket.Size = new Size(225, 33);
             txtbxSearchTicket.TabIndex = 50;
             // 
@@ -110,7 +110,7 @@
             // btnAddEvent
             // 
             btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges7;
+            btnAddEvent.CustomizableEdges = customizableEdges15;
             btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
             btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -120,7 +120,7 @@
             btnAddEvent.ForeColor = Color.Black;
             btnAddEvent.Location = new Point(840, 532);
             btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnAddEvent.Size = new Size(148, 40);
             btnAddEvent.TabIndex = 47;
             btnAddEvent.Text = "Add ticket";
@@ -139,7 +139,6 @@
             // ticketID
             // 
             ticketID.HeaderText = "ID";
-            ticketID.MinimumWidth = 8;
             ticketID.Name = "ticketID";
             ticketID.Width = 150;
             // 
@@ -162,7 +161,6 @@
             ticketType.HeaderText = "Type";
             ticketType.MinimumWidth = 8;
             ticketType.Name = "ticketType";
-            ticketType.Width = 150;
             // 
             // ticketPrice
             // 
@@ -176,7 +174,6 @@
             ticketQuantity.HeaderText = "Quantity";
             ticketQuantity.MinimumWidth = 8;
             ticketQuantity.Name = "ticketQuantity";
-            ticketQuantity.Width = 150;
             // 
             // ticketAction
             // 
