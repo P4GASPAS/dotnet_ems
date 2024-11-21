@@ -91,6 +91,7 @@
             btnLogIn.Size = new Size(125, 40);
             btnLogIn.TabIndex = 11;
             btnLogIn.Text = "LOG IN";
+            btnLogIn.Click += btnLogIn_Click;
             // 
             // txtbxPassword
             // 

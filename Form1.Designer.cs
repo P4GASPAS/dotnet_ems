@@ -32,14 +32,13 @@ namespace event_management_system
         private void InitializeComponent()
         {
             mainPanel = new Panel();
-            logIn = new LogIn();
+            logIn = new LogIn(this);
             title = new Label();
             mainPanel.SuspendLayout();
             SuspendLayout();
             // 
             // mainPanel
             // 
-            mainPanel.Controls.Add(logIn);
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(0, 0);
             mainPanel.Name = "mainPanel";
@@ -48,13 +47,10 @@ namespace event_management_system
             mainPanel.Paint += mainPanel_Paint;
             // 
             // logIn
-            // 
-            logIn.BackColor = Color.LightCyan;
+            //
+            mainPanel.Controls.Add(logIn);
             logIn.Location = new Point(0, 0);
-            logIn.Margin = new Padding(2);
-            logIn.Name = "logIn";
-            logIn.Size = new Size(1262, 673);
-            logIn.TabIndex = 0;
+            mainPanel.ResumeLayout();
             // 
             // title
             // 
