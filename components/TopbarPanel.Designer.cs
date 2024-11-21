@@ -65,11 +65,12 @@
             btnLogOut.IconColor = Color.Black;
             btnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnLogOut.Location = new Point(941, 15);
-            btnLogOut.Margin = new Padding(2, 2, 2, 2);
+            btnLogOut.Margin = new Padding(2);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.Size = new Size(66, 44);
             btnLogOut.TabIndex = 1;
             btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += btnLogOut_Click;
             // 
             // TopbarPanel
             // 

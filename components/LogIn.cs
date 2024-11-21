@@ -24,7 +24,7 @@ namespace event_management_system.components
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             form1.ClearMainPanel();
-            form1.AddSideTopPanel();
+            form1.AddSideTopDynamicPanel();
         }
     }
 }
