@@ -37,22 +37,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(19, 19);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(14, 21);
             label1.Name = "label1";
-            label1.Size = new Size(555, 28);
+            label1.Size = new Size(530, 27);
             label1.TabIndex = 0;
             label1.Text = "GATHERWELL EVENT MANAGEMENT SYSTEM";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.PowderBlue;
+            panel1.BackColor = Color.Azure;
             panel1.Controls.Add(btnLogOut);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.RightToLeft = RightToLeft.Yes;
             panel1.Size = new Size(1010, 68);
@@ -60,25 +58,25 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.BackColor = Color.PowderBlue;
+            btnLogOut.BackColor = Color.Azure;
             btnLogOut.FlatAppearance.BorderSize = 0;
             btnLogOut.FlatStyle = FlatStyle.Flat;
             btnLogOut.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
             btnLogOut.IconColor = Color.Black;
             btnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnLogOut.Location = new Point(914, 7);
+            btnLogOut.Location = new Point(941, 15);
+            btnLogOut.Margin = new Padding(2, 2, 2, 2);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(82, 55);
+            btnLogOut.Size = new Size(66, 44);
             btnLogOut.TabIndex = 1;
             btnLogOut.UseVisualStyleBackColor = false;
             // 
             // TopbarPanel
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(panel1);
-            Margin = new Padding(4);
             Name = "TopbarPanel";
             Size = new Size(1010, 68);
             panel1.ResumeLayout(false);

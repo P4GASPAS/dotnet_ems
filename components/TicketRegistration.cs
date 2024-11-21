@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace event_management_system.components
 {
-    public partial class ManageStaffs : UserControl
+    public partial class TicketRegistration : UserControl
     {
-        public ManageStaffs()
+        public TicketRegistration()
         {
             InitializeComponent();
         }
 
-        private void filter_SelectedIndexChanged(object sender, EventArgs e)
+        private void lblTittle_Click(object sender, EventArgs e)
         {
 
         }

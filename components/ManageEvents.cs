@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace event_management_system.components
 {
-    public partial class ManageStaffs : UserControl
+    public partial class ManageEvents : UserControl
     {
-        public ManageStaffs()
+        public ManageEvents()
         {
             InitializeComponent();
-        }
-
-        private void filter_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

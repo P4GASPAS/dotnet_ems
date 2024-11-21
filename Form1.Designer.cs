@@ -31,52 +31,31 @@ namespace event_management_system
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             mainPanel = new Panel();
-            homePageBtn = new Button();
+            logIn = new LogIn();
             title = new Label();
-            pictureBox1 = new PictureBox();
-        //    testPanel = new TestPanel(mainPanel);
-            topbarPanel = new TopbarPanel();
-            sidebarPanel = new SidebarPanel();
             mainPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // mainPanel
             // 
+            mainPanel.Controls.Add(logIn);
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(0, 0);
+            mainPanel.Margin = new Padding(4, 4, 4, 4);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(1262, 673);
+            mainPanel.Size = new Size(1555, 782);
             mainPanel.TabIndex = 0;
             mainPanel.Paint += mainPanel_Paint;
-            //
-            // SidebarPanel
-            //
-            mainPanel.Controls.Add(sidebarPanel);
-            sidebarPanel.Location = new Point(0, 0);
-            mainPanel.ResumeLayout();
             // 
-            // homePageBtn
+            // logIn
             // 
-            homePageBtn.BackColor = ColorTranslator.FromHtml("#007B7F");
-            homePageBtn.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            homePageBtn.ForeColor = Color.FromArgb(228, 228, 228);
-            homePageBtn.Location = new Point(0, 0);
-            homePageBtn.Margin = new Padding(0);
-            homePageBtn.Name = "homePageBtn";
-            homePageBtn.Size = new Size(252, 50);
-            homePageBtn.TabIndex = 0;
-            homePageBtn.Text = "Home";
-            homePageBtn.UseVisualStyleBackColor = false;
-            homePageBtn.Click += homePageBtn_Click;
-            //
-            // topbarPanel
-            //
-            mainPanel.Controls.Add(topbarPanel);
-            topbarPanel.Location = new Point(252, 0);
-            mainPanel.ResumeLayout();
+            logIn.BackColor = Color.LightCyan;
+            logIn.Location = new Point(0, 0);
+            logIn.Margin = new Padding(2);
+            logIn.Name = "logIn";
+            logIn.Size = new Size(1561, 782);
+            logIn.TabIndex = 0;
             // 
             // title
             // 
@@ -88,45 +67,26 @@ namespace event_management_system
             title.TabIndex = 1;
             title.Text = "Event Management System";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(92, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(68, 68);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            //
-            // TestPanel
-            //
-           // mainPanel.Controls.Add(testPanel);
-           // testPanel.Location = new Point(252, 68);
-           // mainPanel.ResumeLayout();
-            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(1555, 782);
             Controls.Add(mainPanel);
+            Margin = new Padding(4, 4, 4, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Event Management System";
             mainPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         public Panel mainPanel;
-        private Button homePageBtn;
-        private PictureBox pictureBox1;
         private Label title;
-        private TestPanel testPanel;
-        private TopbarPanel topbarPanel;
-        private SidebarPanel sidebarPanel;
+        private LogIn logIn;
     }
 }
