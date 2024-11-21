@@ -42,9 +42,8 @@ namespace event_management_system
             mainPanel.Controls.Add(logIn);
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(0, 0);
-            mainPanel.Margin = new Padding(4, 4, 4, 4);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(1555, 782);
+            mainPanel.Size = new Size(1249, 659);
             mainPanel.TabIndex = 0;
             mainPanel.Paint += mainPanel_Paint;
             // 
@@ -54,7 +53,7 @@ namespace event_management_system
             logIn.Location = new Point(0, 0);
             logIn.Margin = new Padding(2);
             logIn.Name = "logIn";
-            logIn.Size = new Size(1561, 782);
+            logIn.Size = new Size(1249, 657);
             logIn.TabIndex = 0;
             // 
             // title
@@ -69,11 +68,10 @@ namespace event_management_system
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1555, 782);
+            ClientSize = new Size(1249, 659);
             Controls.Add(mainPanel);
-            Margin = new Padding(4, 4, 4, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
