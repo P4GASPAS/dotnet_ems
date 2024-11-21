@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
-            filter = new ComboBox();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
-            dataGridView1 = new DataGridView();
+            searchStaff = new Guna.UI2.WinForms.Guna2TextBox();
+            lblTittle = new Label();
+            dataStaff = new DataGridView();
             StaffID = new DataGridViewTextBoxColumn();
             StaffFN = new DataGridViewTextBoxColumn();
             StaffLN = new DataGridViewTextBoxColumn();
@@ -44,63 +44,72 @@
             StaffEnd = new DataGridViewTextBoxColumn();
             StaffStatus = new DataGridViewTextBoxColumn();
             StaffAction = new DataGridViewTextBoxColumn();
-            lblTittle = new Label();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            btnAddStaff = new Guna.UI2.WinForms.Guna2Button();
+            filter = new ComboBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataStaff).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(guna2TextBox1);
+            panel1.Controls.Add(searchStaff);
             panel1.Controls.Add(lblTittle);
-            panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(btnAddEvent);
+            panel1.Controls.Add(dataStaff);
+            panel1.Controls.Add(btnAddStaff);
             panel1.Controls.Add(filter);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(1010, 605);
             panel1.TabIndex = 0;
             // 
-            // filter
+            // searchStaff
             // 
-            filter.FormattingEnabled = true;
-            filter.Location = new Point(862, 47);
-            filter.Margin = new Padding(4);
-            filter.Name = "filter";
-            filter.Size = new Size(125, 33);
-            filter.TabIndex = 10;
-            filter.Text = "Filter";
+            searchStaff.BorderRadius = 20;
+            searchStaff.CustomizableEdges = customizableEdges9;
+            searchStaff.DefaultText = "search staff";
+            searchStaff.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            searchStaff.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            searchStaff.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            searchStaff.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            searchStaff.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            searchStaff.Font = new Font("Arial", 9F);
+            searchStaff.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            searchStaff.Location = new Point(721, 29);
+            searchStaff.Name = "searchStaff";
+            searchStaff.PasswordChar = '\0';
+            searchStaff.PlaceholderText = "";
+            searchStaff.SelectedText = "";
+            searchStaff.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            searchStaff.Size = new Size(180, 34);
+            searchStaff.TabIndex = 45;
             // 
-            // btnAddEvent
+            // lblTittle
             // 
-            btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges11;
-            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAddEvent.FillColor = Color.LimeGreen;
-            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddEvent.ForeColor = Color.Black;
-            btnAddEvent.Location = new Point(839, 546);
-            btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnAddEvent.Size = new Size(148, 40);
-            btnAddEvent.TabIndex = 42;
-            btnAddEvent.Text = "Add staff";
+            lblTittle.AutoSize = true;
+            lblTittle.BackColor = Color.Azure;
+            lblTittle.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTittle.ForeColor = SystemColors.Desktop;
+            lblTittle.Location = new Point(47, 36);
+            lblTittle.Margin = new Padding(2, 0, 2, 0);
+            lblTittle.Name = "lblTittle";
+            lblTittle.Size = new Size(160, 27);
+            lblTittle.TabIndex = 44;
+            lblTittle.Text = "Manage Staff";
             // 
-            // dataGridView1
+            // dataStaff
             // 
-            dataGridView1.BackgroundColor = Color.Azure;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { StaffID, StaffFN, StaffLN, StaffUsername, StaffStart, StaffEnd, StaffStatus, StaffAction });
-            dataGridView1.Location = new Point(1, 105);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1007, 422);
-            dataGridView1.TabIndex = 43;
+            dataStaff.BackgroundColor = Color.Azure;
+            dataStaff.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataStaff.Columns.AddRange(new DataGridViewColumn[] { StaffID, StaffFN, StaffLN, StaffUsername, StaffStart, StaffEnd, StaffStatus, StaffAction });
+            dataStaff.Location = new Point(1, 84);
+            dataStaff.Margin = new Padding(2);
+            dataStaff.Name = "dataStaff";
+            dataStaff.RowHeadersVisible = false;
+            dataStaff.RowHeadersWidth = 62;
+            dataStaff.Size = new Size(1009, 428);
+            dataStaff.TabIndex = 43;
             // 
             // StaffID
             // 
@@ -158,50 +167,51 @@
             StaffAction.Name = "StaffAction";
             StaffAction.Width = 150;
             // 
-            // lblTittle
+            // btnAddStaff
             // 
-            lblTittle.AutoSize = true;
-            lblTittle.BackColor = Color.Azure;
-            lblTittle.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTittle.ForeColor = SystemColors.Desktop;
-            lblTittle.Location = new Point(22, 47);
-            lblTittle.Name = "lblTittle";
-            lblTittle.Size = new Size(163, 28);
-            lblTittle.TabIndex = 44;
-            lblTittle.Text = "Manage Staff";
+            btnAddStaff.BorderRadius = 20;
+            btnAddStaff.CustomizableEdges = customizableEdges11;
+            btnAddStaff.DisabledState.BorderColor = Color.DarkGray;
+            btnAddStaff.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAddStaff.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAddStaff.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAddStaff.FillColor = Color.LimeGreen;
+            btnAddStaff.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddStaff.ForeColor = Color.Black;
+            btnAddStaff.Location = new Point(827, 529);
+            btnAddStaff.Margin = new Padding(2);
+            btnAddStaff.Name = "btnAddStaff";
+            btnAddStaff.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnAddStaff.Size = new Size(125, 40);
+            btnAddStaff.TabIndex = 42;
+            btnAddStaff.Text = "Add staff";
             // 
-            // guna2TextBox1
+            // filter
             // 
-            guna2TextBox1.CustomizableEdges = customizableEdges9;
-            guna2TextBox1.DefaultText = "search staff";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(620, 47);
-            guna2TextBox1.Margin = new Padding(4, 5, 4, 5);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox1.Size = new Size(225, 33);
-            guna2TextBox1.TabIndex = 45;
+            filter.BackColor = Color.Azure;
+            filter.FlatStyle = FlatStyle.Flat;
+            filter.Font = new Font("Arial", 9F);
+            filter.FormattingEnabled = true;
+            filter.Items.AddRange(new object[] { "Active", "Inactive" });
+            filter.Location = new Point(907, 34);
+            filter.Name = "filter";
+            filter.Size = new Size(72, 25);
+            filter.TabIndex = 10;
+            filter.Text = "Filter";
+            filter.SelectedIndexChanged += filter_SelectedIndexChanged;
             // 
             // ManageStaffs
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             Controls.Add(panel1);
+            Margin = new Padding(2);
             Name = "ManageStaffs";
             Size = new Size(1010, 605);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataStaff).EndInit();
             ResumeLayout(false);
         }
 
@@ -209,8 +219,8 @@
 
         private Panel panel1;
         private ComboBox filter;
-        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
-        private DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2Button btnAddStaff;
+        private DataGridView dataStaff;
         private DataGridViewTextBoxColumn StaffID;
         private DataGridViewTextBoxColumn StaffFN;
         private DataGridViewTextBoxColumn StaffLN;
@@ -219,7 +229,7 @@
         private DataGridViewTextBoxColumn StaffEnd;
         private DataGridViewTextBoxColumn StaffStatus;
         private DataGridViewTextBoxColumn StaffAction;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox searchStaff;
         private Label lblTittle;
     }
 }

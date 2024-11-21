@@ -73,7 +73,7 @@ namespace event_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap 
+        internal static System.Drawing.Bitmap calendar
             {
             get {
                 object obj = ResourceManager.GetObject("calendar", resourceCulture);

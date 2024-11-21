@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
-            txtbxSearchTicket = new Guna.UI2.WinForms.Guna2TextBox();
-            lblTittle = new Label();
             ticketData = new DataGridView();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
-            filter = new ComboBox();
             ticketID = new DataGridViewTextBoxColumn();
             eventID = new DataGridViewTextBoxColumn();
             registrantID = new DataGridViewTextBoxColumn();
@@ -45,6 +41,10 @@
             ticketPrice = new DataGridViewTextBoxColumn();
             ticketQuantity = new DataGridViewTextBoxColumn();
             ticketAction = new DataGridViewTextBoxColumn();
+            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
+            label1 = new Label();
+            searchTicket = new Guna.UI2.WinForms.Guna2TextBox();
+            filter = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ticketData).BeginInit();
             SuspendLayout();
@@ -52,93 +52,35 @@
             // panel1
             // 
             panel1.BackColor = Color.Azure;
-            panel1.Controls.Add(txtbxSearchTicket);
-            panel1.Controls.Add(lblTittle);
+            panel1.Controls.Add(searchTicket);
+            panel1.Controls.Add(filter);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(ticketData);
             panel1.Controls.Add(btnAddEvent);
-            panel1.Controls.Add(filter);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(1010, 605);
             panel1.TabIndex = 0;
-            // 
-            // txtbxSearchTicket
-            // 
-            txtbxSearchTicket.CustomizableEdges = customizableEdges13;
-            txtbxSearchTicket.DefaultText = "search ticket";
-            txtbxSearchTicket.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxSearchTicket.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxSearchTicket.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxSearchTicket.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxSearchTicket.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxSearchTicket.Font = new Font("Segoe UI", 9F);
-            txtbxSearchTicket.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxSearchTicket.Location = new Point(621, 33);
-            txtbxSearchTicket.Margin = new Padding(4, 5, 4, 5);
-            txtbxSearchTicket.Name = "txtbxSearchTicket";
-            txtbxSearchTicket.PasswordChar = '\0';
-            txtbxSearchTicket.PlaceholderText = "";
-            txtbxSearchTicket.SelectedText = "";
-            txtbxSearchTicket.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtbxSearchTicket.Size = new Size(225, 33);
-            txtbxSearchTicket.TabIndex = 50;
-            // 
-            // lblTittle
-            // 
-            lblTittle.AutoSize = true;
-            lblTittle.BackColor = Color.Azure;
-            lblTittle.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTittle.ForeColor = SystemColors.Desktop;
-            lblTittle.Location = new Point(23, 33);
-            lblTittle.Name = "lblTittle";
-            lblTittle.Size = new Size(181, 28);
-            lblTittle.TabIndex = 49;
-            lblTittle.Text = "Manage Ticket";
             // 
             // ticketData
             // 
             ticketData.BackgroundColor = Color.Azure;
             ticketData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             ticketData.Columns.AddRange(new DataGridViewColumn[] { ticketID, eventID, registrantID, ticketType, ticketPrice, ticketQuantity, ticketAction });
-            ticketData.Location = new Point(2, 91);
+            ticketData.Location = new Point(1, 84);
+            ticketData.Margin = new Padding(2, 2, 2, 2);
             ticketData.Name = "ticketData";
+            ticketData.RowHeadersVisible = false;
             ticketData.RowHeadersWidth = 62;
-            ticketData.Size = new Size(1007, 422);
+            ticketData.Size = new Size(1009, 428);
             ticketData.TabIndex = 48;
-            // 
-            // btnAddEvent
-            // 
-            btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges15;
-            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAddEvent.FillColor = Color.LimeGreen;
-            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddEvent.ForeColor = Color.Black;
-            btnAddEvent.Location = new Point(840, 532);
-            btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btnAddEvent.Size = new Size(148, 40);
-            btnAddEvent.TabIndex = 47;
-            btnAddEvent.Text = "Add ticket";
-            // 
-            // filter
-            // 
-            filter.FormattingEnabled = true;
-            filter.Items.AddRange(new object[] { "VIP", "Regular" });
-            filter.Location = new Point(863, 33);
-            filter.Margin = new Padding(4);
-            filter.Name = "filter";
-            filter.Size = new Size(125, 33);
-            filter.TabIndex = 46;
-            filter.Text = "Filter";
             // 
             // ticketID
             // 
             ticketID.HeaderText = "ID";
+            ticketID.MinimumWidth = 6;
             ticketID.Name = "ticketID";
             ticketID.Width = 150;
             // 
@@ -161,6 +103,7 @@
             ticketType.HeaderText = "Type";
             ticketType.MinimumWidth = 8;
             ticketType.Name = "ticketType";
+            ticketType.Width = 125;
             // 
             // ticketPrice
             // 
@@ -174,6 +117,7 @@
             ticketQuantity.HeaderText = "Quantity";
             ticketQuantity.MinimumWidth = 8;
             ticketQuantity.Name = "ticketQuantity";
+            ticketQuantity.Width = 125;
             // 
             // ticketAction
             // 
@@ -182,11 +126,77 @@
             ticketAction.Name = "ticketAction";
             ticketAction.Width = 150;
             // 
+            // btnAddEvent
+            // 
+            btnAddEvent.BorderRadius = 20;
+            btnAddEvent.CustomizableEdges = customizableEdges7;
+            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAddEvent.FillColor = Color.LimeGreen;
+            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddEvent.ForeColor = Color.Black;
+            btnAddEvent.Location = new Point(827, 529);
+            btnAddEvent.Margin = new Padding(2, 2, 2, 2);
+            btnAddEvent.Name = "btnAddEvent";
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnAddEvent.Size = new Size(125, 40);
+            btnAddEvent.TabIndex = 47;
+            btnAddEvent.Text = "Add ticket";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Azure;
+            label1.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.Desktop;
+            label1.Location = new Point(47, 36);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(176, 27);
+            label1.TabIndex = 51;
+            label1.Text = "Manage Ticket";
+            // 
+            // searchTicket
+            // 
+            searchTicket.BorderRadius = 20;
+            searchTicket.CustomizableEdges = customizableEdges5;
+            searchTicket.DefaultText = "search ticket";
+            searchTicket.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            searchTicket.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            searchTicket.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            searchTicket.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            searchTicket.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            searchTicket.Font = new Font("Arial", 9F);
+            searchTicket.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            searchTicket.Location = new Point(694, 27);
+            searchTicket.Name = "searchTicket";
+            searchTicket.PasswordChar = '\0';
+            searchTicket.PlaceholderText = "";
+            searchTicket.SelectedText = "";
+            searchTicket.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            searchTicket.Size = new Size(180, 34);
+            searchTicket.TabIndex = 53;
+            // 
+            // filter
+            // 
+            filter.BackColor = Color.Azure;
+            filter.FlatStyle = FlatStyle.Flat;
+            filter.Font = new Font("Arial", 9F);
+            filter.FormattingEnabled = true;
+            filter.Location = new Point(880, 36);
+            filter.Name = "filter";
+            filter.Size = new Size(72, 25);
+            filter.TabIndex = 52;
+            filter.Text = "Filter";
+            // 
             // ManageTicket
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "ManageTicket";
             Size = new Size(1010, 605);
             panel1.ResumeLayout(false);
@@ -198,11 +208,8 @@
         #endregion
 
         private Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtbxSearchTicket;
-        private Label lblTittle;
         private DataGridView ticketData;
         private Guna.UI2.WinForms.Guna2Button btnAddEvent;
-        private ComboBox filter;
         private DataGridViewTextBoxColumn ticketID;
         private DataGridViewTextBoxColumn eventID;
         private DataGridViewTextBoxColumn registrantID;
@@ -210,5 +217,8 @@
         private DataGridViewTextBoxColumn ticketPrice;
         private DataGridViewTextBoxColumn ticketQuantity;
         private DataGridViewTextBoxColumn ticketAction;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox searchTicket;
+        private ComboBox filter;
     }
 }
