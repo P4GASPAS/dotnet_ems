@@ -28,160 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
-            panel5 = new Panel();
-            dataGridView1 = new DataGridView();
-            EventName = new DataGridViewTextBoxColumn();
-            EventTime = new DataGridViewTextBoxColumn();
-            EventDate = new DataGridViewTextBoxColumn();
-            EventLocation = new DataGridViewTextBoxColumn();
-            label2 = new Label();
-            panel4 = new Panel();
-            lblDashboardTicketSales = new Label();
-            panel3 = new Panel();
-            label1 = new Label();
-            panel2 = new Panel();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            lbltxtbxRegistrants = new Guna.UI2.WinForms.Guna2TextBox();
+            lbltxtbxTicketSales = new Guna.UI2.WinForms.Guna2TextBox();
+            totalRegistrants = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            lblDashboardTotalRegistrants = new Label();
-            lblDashboardregistrants = new Label();
+            lbltxtbxEvent365 = new Guna.UI2.WinForms.Guna2TextBox();
+            lbltxtbxUpcomingEvent7 = new Guna.UI2.WinForms.Guna2TextBox();
+            dataUpcomingEvents = new DataGridView();
+            EventLocation = new DataGridViewTextBoxColumn();
+            EventDate = new DataGridViewTextBoxColumn();
+            EventTime = new DataGridViewTextBoxColumn();
+            EventName = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel4.SuspendLayout();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
+            guna2Panel2.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            guna2Panel3.SuspendLayout();
+            guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataUpcomingEvents).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Azure;
-            panel1.Controls.Add(panel5);
-            panel1.Controls.Add(panel4);
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(guna2Panel4);
+            panel1.Controls.Add(guna2Panel3);
+            panel1.Controls.Add(guna2Panel2);
+            panel1.Controls.Add(guna2Panel1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(1010, 605);
             panel1.TabIndex = 0;
             // 
-            // panel5
+            // guna2Panel2
             // 
-            panel5.Controls.Add(dataGridView1);
-            panel5.Controls.Add(label2);
-            panel5.Location = new Point(436, 307);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(559, 258);
-            panel5.TabIndex = 2;
+            guna2Panel2.BorderRadius = 30;
+            guna2Panel2.Controls.Add(lbltxtbxTicketSales);
+            guna2Panel2.CustomizableEdges = customizableEdges51;
+            guna2Panel2.Location = new Point(5, 309);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            guna2Panel2.Size = new Size(411, 291);
+            guna2Panel2.TabIndex = 1;
             // 
-            // dataGridView1
+            // guna2Panel1
             // 
-            dataGridView1.BackgroundColor = Color.Azure;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { EventName, EventTime, EventDate, EventLocation });
-            dataGridView1.Location = new Point(3, 47);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(553, 208);
-            dataGridView1.TabIndex = 3;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            guna2Panel1.BorderRadius = 30;
+            guna2Panel1.Controls.Add(iconPictureBox1);
+            guna2Panel1.Controls.Add(totalRegistrants);
+            guna2Panel1.Controls.Add(lbltxtbxRegistrants);
+            guna2Panel1.CustomizableEdges = customizableEdges55;
+            guna2Panel1.Location = new Point(5, 3);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            guna2Panel1.Size = new Size(411, 302);
+            guna2Panel1.TabIndex = 0;
+            guna2Panel1.Paint += guna2Panel1_Paint;
             // 
-            // EventName
+            // guna2Panel3
             // 
-            EventName.HeaderText = "Event Name";
-            EventName.MinimumWidth = 8;
-            EventName.Name = "EventName";
-            EventName.Width = 150;
+            guna2Panel3.BorderRadius = 30;
+            guna2Panel3.Controls.Add(lbltxtbxEvent365);
+            guna2Panel3.CustomizableEdges = customizableEdges59;
+            guna2Panel3.Location = new Point(421, 3);
+            guna2Panel3.Name = "guna2Panel3";
+            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            guna2Panel3.Size = new Size(585, 302);
+            guna2Panel3.TabIndex = 1;
             // 
-            // EventTime
+            // guna2Panel4
             // 
-            EventTime.HeaderText = "Time";
-            EventTime.MinimumWidth = 8;
-            EventTime.Name = "EventTime";
-            EventTime.Width = 150;
+            guna2Panel4.BorderRadius = 30;
+            guna2Panel4.Controls.Add(dataUpcomingEvents);
+            guna2Panel4.Controls.Add(lbltxtbxUpcomingEvent7);
+            guna2Panel4.CustomizableEdges = customizableEdges63;
+            guna2Panel4.Location = new Point(420, 309);
+            guna2Panel4.Name = "guna2Panel4";
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            guna2Panel4.Size = new Size(585, 292);
+            guna2Panel4.TabIndex = 2;
             // 
-            // EventDate
+            // lbltxtbxRegistrants
             // 
-            EventDate.HeaderText = "Date";
-            EventDate.MinimumWidth = 8;
-            EventDate.Name = "EventDate";
-            EventDate.Width = 150;
+            lbltxtbxRegistrants.BackColor = Color.Black;
+            lbltxtbxRegistrants.CustomizableEdges = customizableEdges53;
+            lbltxtbxRegistrants.DefaultText = "Registrants (last 365 days)";
+            lbltxtbxRegistrants.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            lbltxtbxRegistrants.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            lbltxtbxRegistrants.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxRegistrants.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxRegistrants.FillColor = Color.LightSkyBlue;
+            lbltxtbxRegistrants.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxRegistrants.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbltxtbxRegistrants.ForeColor = Color.Black;
+            lbltxtbxRegistrants.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxRegistrants.Location = new Point(2, 4);
+            lbltxtbxRegistrants.Margin = new Padding(5, 6, 5, 6);
+            lbltxtbxRegistrants.Name = "lbltxtbxRegistrants";
+            lbltxtbxRegistrants.PasswordChar = '\0';
+            lbltxtbxRegistrants.PlaceholderText = "";
+            lbltxtbxRegistrants.SelectedText = "";
+            lbltxtbxRegistrants.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            lbltxtbxRegistrants.Size = new Size(406, 68);
+            lbltxtbxRegistrants.TabIndex = 0;
+            lbltxtbxRegistrants.TextAlign = HorizontalAlignment.Center;
             // 
-            // EventLocation
+            // lbltxtbxTicketSales
             // 
-            EventLocation.HeaderText = "Location";
-            EventLocation.MinimumWidth = 8;
-            EventLocation.Name = "EventLocation";
-            EventLocation.Width = 150;
+            lbltxtbxTicketSales.BackColor = Color.Black;
+            lbltxtbxTicketSales.CustomizableEdges = customizableEdges49;
+            lbltxtbxTicketSales.DefaultText = "Ticket Sales (last 365 days)";
+            lbltxtbxTicketSales.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            lbltxtbxTicketSales.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            lbltxtbxTicketSales.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxTicketSales.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxTicketSales.FillColor = Color.LightSkyBlue;
+            lbltxtbxTicketSales.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxTicketSales.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbltxtbxTicketSales.ForeColor = Color.Black;
+            lbltxtbxTicketSales.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxTicketSales.Location = new Point(1, 3);
+            lbltxtbxTicketSales.Margin = new Padding(5, 6, 5, 6);
+            lbltxtbxTicketSales.Name = "lbltxtbxTicketSales";
+            lbltxtbxTicketSales.PasswordChar = '\0';
+            lbltxtbxTicketSales.PlaceholderText = "";
+            lbltxtbxTicketSales.SelectedText = "";
+            lbltxtbxTicketSales.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            lbltxtbxTicketSales.Size = new Size(410, 68);
+            lbltxtbxTicketSales.TabIndex = 1;
+            lbltxtbxTicketSales.TextAlign = HorizontalAlignment.Center;
             // 
-            // label2
+            // totalRegistrants
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.SkyBlue;
-            label2.Font = new Font("Arial Rounded MT Bold", 12F);
-            label2.Location = new Point(2, 0);
-            label2.Margin = new Padding(0);
-            label2.Name = "label2";
-            label2.Padding = new Padding(95, 10, 95, 10);
-            label2.Size = new Size(556, 48);
-            label2.TabIndex = 3;
-            label2.Text = "Upcoming Events (next 7 days)";
-            label2.Click += label2_Click;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(lblDashboardTicketSales);
-            panel4.Location = new Point(15, 306);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(408, 258);
-            panel4.TabIndex = 1;
-            panel4.Paint += panel4_Paint;
-            // 
-            // lblDashboardTicketSales
-            // 
-            lblDashboardTicketSales.AutoSize = true;
-            lblDashboardTicketSales.BackColor = Color.SkyBlue;
-            lblDashboardTicketSales.Font = new Font("Arial Rounded MT Bold", 12F);
-            lblDashboardTicketSales.Location = new Point(-1, 0);
-            lblDashboardTicketSales.Margin = new Padding(0);
-            lblDashboardTicketSales.Name = "lblDashboardTicketSales";
-            lblDashboardTicketSales.Padding = new Padding(45, 10, 45, 10);
-            lblDashboardTicketSales.Size = new Size(417, 48);
-            lblDashboardTicketSales.TabIndex = 1;
-            lblDashboardTicketSales.Text = "Ticket Sales (last 365 days)";
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(label1);
-            panel3.Location = new Point(436, 22);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(559, 264);
-            panel3.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.SkyBlue;
-            label1.Font = new Font("Arial Rounded MT Bold", 12F);
-            label1.Location = new Point(0, 1);
-            label1.Margin = new Padding(0);
-            label1.Name = "label1";
-            label1.Padding = new Padding(148, 10, 148, 10);
-            label1.Size = new Size(559, 48);
-            label1.TabIndex = 2;
-            label1.Text = "Events (last 365 days)";
-            label1.Click += label1_Click;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(iconPictureBox1);
-            panel2.Controls.Add(lblDashboardTotalRegistrants);
-            panel2.Controls.Add(lblDashboardregistrants);
-            panel2.Location = new Point(15, 21);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(408, 264);
-            panel2.TabIndex = 0;
+            totalRegistrants.AutoSize = true;
+            totalRegistrants.Font = new Font("Arial Rounded MT Bold", 40.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            totalRegistrants.Location = new Point(37, 133);
+            totalRegistrants.Name = "totalRegistrants";
+            totalRegistrants.Size = new Size(214, 77);
+            totalRegistrants.TabIndex = 1;
+            totalRegistrants.Text = "2,235";
             // 
             // iconPictureBox1
             // 
@@ -190,75 +198,140 @@
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
             iconPictureBox1.IconColor = SystemColors.ControlText;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 124;
-            iconPictureBox1.Location = new Point(235, 83);
+            iconPictureBox1.IconSize = 112;
+            iconPictureBox1.Location = new Point(245, 112);
             iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(136, 124);
+            iconPictureBox1.Size = new Size(116, 112);
+            iconPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             iconPictureBox1.TabIndex = 2;
             iconPictureBox1.TabStop = false;
             // 
-            // lblDashboardTotalRegistrants
+            // lbltxtbxEvent365
             // 
-            lblDashboardTotalRegistrants.AutoSize = true;
-            lblDashboardTotalRegistrants.Font = new Font("Arial Rounded MT Bold", 30F);
-            lblDashboardTotalRegistrants.Location = new Point(36, 107);
-            lblDashboardTotalRegistrants.Name = "lblDashboardTotalRegistrants";
-            lblDashboardTotalRegistrants.Size = new Size(193, 70);
-            lblDashboardTotalRegistrants.TabIndex = 1;
-            lblDashboardTotalRegistrants.Text = "2,235";
-            lblDashboardTotalRegistrants.Click += lblDashboardTotalRegistrants_Click;
+            lbltxtbxEvent365.BackColor = Color.Black;
+            lbltxtbxEvent365.CustomizableEdges = customizableEdges57;
+            lbltxtbxEvent365.DefaultText = "Events (last 365 days)";
+            lbltxtbxEvent365.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            lbltxtbxEvent365.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            lbltxtbxEvent365.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxEvent365.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxEvent365.FillColor = Color.LightSkyBlue;
+            lbltxtbxEvent365.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxEvent365.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbltxtbxEvent365.ForeColor = Color.Black;
+            lbltxtbxEvent365.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxEvent365.Location = new Point(-1, 3);
+            lbltxtbxEvent365.Margin = new Padding(5, 6, 5, 6);
+            lbltxtbxEvent365.Name = "lbltxtbxEvent365";
+            lbltxtbxEvent365.PasswordChar = '\0';
+            lbltxtbxEvent365.PlaceholderText = "";
+            lbltxtbxEvent365.SelectedText = "";
+            lbltxtbxEvent365.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            lbltxtbxEvent365.Size = new Size(583, 68);
+            lbltxtbxEvent365.TabIndex = 2;
+            lbltxtbxEvent365.TextAlign = HorizontalAlignment.Center;
             // 
-            // lblDashboardregistrants
+            // lbltxtbxUpcomingEvent7
             // 
-            lblDashboardregistrants.AutoSize = true;
-            lblDashboardregistrants.BackColor = Color.SkyBlue;
-            lblDashboardregistrants.Font = new Font("Arial Rounded MT Bold", 12F);
-            lblDashboardregistrants.Location = new Point(1, 2);
-            lblDashboardregistrants.Margin = new Padding(0);
-            lblDashboardregistrants.Name = "lblDashboardregistrants";
-            lblDashboardregistrants.Padding = new Padding(45, 10, 45, 10);
-            lblDashboardregistrants.Size = new Size(409, 48);
-            lblDashboardregistrants.TabIndex = 0;
-            lblDashboardregistrants.Text = "Registrants (last 365 days)";
+            lbltxtbxUpcomingEvent7.BackColor = Color.Black;
+            lbltxtbxUpcomingEvent7.CustomizableEdges = customizableEdges61;
+            lbltxtbxUpcomingEvent7.DefaultText = "Upcoming Events (next 7 days)";
+            lbltxtbxUpcomingEvent7.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            lbltxtbxUpcomingEvent7.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            lbltxtbxUpcomingEvent7.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxUpcomingEvent7.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            lbltxtbxUpcomingEvent7.FillColor = Color.LightSkyBlue;
+            lbltxtbxUpcomingEvent7.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxUpcomingEvent7.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbltxtbxUpcomingEvent7.ForeColor = Color.Black;
+            lbltxtbxUpcomingEvent7.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            lbltxtbxUpcomingEvent7.Location = new Point(0, 2);
+            lbltxtbxUpcomingEvent7.Margin = new Padding(5, 6, 5, 6);
+            lbltxtbxUpcomingEvent7.Name = "lbltxtbxUpcomingEvent7";
+            lbltxtbxUpcomingEvent7.PasswordChar = '\0';
+            lbltxtbxUpcomingEvent7.PlaceholderText = "";
+            lbltxtbxUpcomingEvent7.SelectedText = "";
+            lbltxtbxUpcomingEvent7.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            lbltxtbxUpcomingEvent7.Size = new Size(583, 68);
+            lbltxtbxUpcomingEvent7.TabIndex = 3;
+            lbltxtbxUpcomingEvent7.TextAlign = HorizontalAlignment.Center;
+            // 
+            // dataUpcomingEvents
+            // 
+            dataUpcomingEvents.BackgroundColor = Color.Azure;
+            dataUpcomingEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataUpcomingEvents.Columns.AddRange(new DataGridViewColumn[] { EventName, EventTime, EventDate, EventLocation });
+            dataUpcomingEvents.Location = new Point(4, 70);
+            dataUpcomingEvents.Name = "dataUpcomingEvents";
+            dataUpcomingEvents.RowHeadersVisible = false;
+            dataUpcomingEvents.RowHeadersWidth = 51;
+            dataUpcomingEvents.Size = new Size(582, 219);
+            dataUpcomingEvents.TabIndex = 4;
+            // 
+            // EventLocation
+            // 
+            EventLocation.HeaderText = "Location";
+            EventLocation.MinimumWidth = 6;
+            EventLocation.Name = "EventLocation";
+            EventLocation.Width = 125;
+            // 
+            // EventDate
+            // 
+            EventDate.HeaderText = "Date";
+            EventDate.MinimumWidth = 6;
+            EventDate.Name = "EventDate";
+            EventDate.Width = 125;
+            // 
+            // EventTime
+            // 
+            EventTime.HeaderText = "Time";
+            EventTime.MinimumWidth = 6;
+            EventTime.Name = "EventTime";
+            EventTime.Width = 125;
+            // 
+            // EventName
+            // 
+            EventName.HeaderText = "Event Name";
+            EventName.MinimumWidth = 6;
+            EventName.Name = "EventName";
+            EventName.Width = 125;
             // 
             // dashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
+            Margin = new Padding(2);
             Name = "dashboard";
             Size = new Size(1010, 605);
             panel1.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            guna2Panel2.ResumeLayout(false);
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            guna2Panel3.ResumeLayout(false);
+            guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataUpcomingEvents).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel5;
-        private Panel panel4;
-        private Panel panel3;
-        private Panel panel2;
-        private Label lblDashboardregistrants;
-        private Label lblDashboardTicketSales;
-        private Label label2;
-        private Label label1;
-        private DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2TextBox lbltxtbxRegistrants;
+        private Guna.UI2.WinForms.Guna2TextBox lbltxtbxTicketSales;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Label totalRegistrants;
+        private DataGridView dataUpcomingEvents;
+        private Guna.UI2.WinForms.Guna2TextBox lbltxtbxUpcomingEvent7;
+        private Guna.UI2.WinForms.Guna2TextBox lbltxtbxEvent365;
         private DataGridViewTextBoxColumn EventName;
         private DataGridViewTextBoxColumn EventTime;
         private DataGridViewTextBoxColumn EventDate;
         private DataGridViewTextBoxColumn EventLocation;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label lblDashboardTotalRegistrants;
     }
 }

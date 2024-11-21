@@ -39,7 +39,17 @@ namespace event_management_system.components
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-        
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
