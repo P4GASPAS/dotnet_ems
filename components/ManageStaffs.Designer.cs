@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             searchStaff = new Guna.UI2.WinForms.Guna2TextBox();
             lblTittle = new Label();
@@ -67,7 +67,7 @@
             // searchStaff
             // 
             searchStaff.BorderRadius = 20;
-            searchStaff.CustomizableEdges = customizableEdges9;
+            searchStaff.CustomizableEdges = customizableEdges1;
             searchStaff.DefaultText = "search staff";
             searchStaff.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             searchStaff.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -77,11 +77,12 @@
             searchStaff.Font = new Font("Arial", 9F);
             searchStaff.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             searchStaff.Location = new Point(721, 29);
+            searchStaff.Margin = new Padding(3, 4, 3, 4);
             searchStaff.Name = "searchStaff";
             searchStaff.PasswordChar = '\0';
             searchStaff.PlaceholderText = "";
             searchStaff.SelectedText = "";
-            searchStaff.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            searchStaff.ShadowDecoration.CustomizableEdges = customizableEdges2;
             searchStaff.Size = new Size(180, 34);
             searchStaff.TabIndex = 45;
             // 
@@ -170,7 +171,7 @@
             // btnAddStaff
             // 
             btnAddStaff.BorderRadius = 20;
-            btnAddStaff.CustomizableEdges = customizableEdges11;
+            btnAddStaff.CustomizableEdges = customizableEdges3;
             btnAddStaff.DisabledState.BorderColor = Color.DarkGray;
             btnAddStaff.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddStaff.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -181,10 +182,11 @@
             btnAddStaff.Location = new Point(827, 529);
             btnAddStaff.Margin = new Padding(2);
             btnAddStaff.Name = "btnAddStaff";
-            btnAddStaff.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnAddStaff.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnAddStaff.Size = new Size(125, 40);
             btnAddStaff.TabIndex = 42;
             btnAddStaff.Text = "Add staff";
+            btnAddStaff.Click += btnAddStaff_Click;
             // 
             // filter
             // 

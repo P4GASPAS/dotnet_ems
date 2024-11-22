@@ -28,21 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
+            txtbxStaffPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            txtbxStaffUsernametxtbxStaffUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            txtbxStaffLastName = new Guna.UI2.WinForms.Guna2TextBox();
+            txtbxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             DTSTaffEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             DTStaffStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             lblContract = new Label();
@@ -54,10 +58,6 @@
             lblLN = new Label();
             lblFN = new Label();
             lblTittle = new Label();
-            txtbxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
-            txtbxStaffLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            txtbxStaffUsernametxtbxStaffUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            txtbxStaffPassword = new Guna.UI2.WinForms.Guna2TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -86,6 +86,106 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1010, 605);
             panel1.TabIndex = 0;
+            // 
+            // txtbxStaffPassword
+            // 
+            txtbxStaffPassword.BackColor = Color.Transparent;
+            txtbxStaffPassword.BorderRadius = 10;
+            txtbxStaffPassword.CustomizableEdges = customizableEdges1;
+            txtbxStaffPassword.DefaultText = "";
+            txtbxStaffPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbxStaffPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbxStaffPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbxStaffPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbxStaffPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxStaffPassword.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbxStaffPassword.ForeColor = Color.Black;
+            txtbxStaffPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxStaffPassword.Location = new Point(509, 230);
+            txtbxStaffPassword.Margin = new Padding(3, 4, 3, 4);
+            txtbxStaffPassword.Name = "txtbxStaffPassword";
+            txtbxStaffPassword.PasswordChar = '\0';
+            txtbxStaffPassword.PlaceholderForeColor = Color.LightCyan;
+            txtbxStaffPassword.PlaceholderText = "";
+            txtbxStaffPassword.SelectedText = "";
+            txtbxStaffPassword.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtbxStaffPassword.Size = new Size(443, 40);
+            txtbxStaffPassword.TabIndex = 57;
+            // 
+            // txtbxStaffUsernametxtbxStaffUsername
+            // 
+            txtbxStaffUsernametxtbxStaffUsername.BackColor = Color.Transparent;
+            txtbxStaffUsernametxtbxStaffUsername.BorderRadius = 10;
+            txtbxStaffUsernametxtbxStaffUsername.CustomizableEdges = customizableEdges3;
+            txtbxStaffUsernametxtbxStaffUsername.DefaultText = "";
+            txtbxStaffUsernametxtbxStaffUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbxStaffUsernametxtbxStaffUsername.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbxStaffUsernametxtbxStaffUsername.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbxStaffUsernametxtbxStaffUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbxStaffUsernametxtbxStaffUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxStaffUsernametxtbxStaffUsername.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbxStaffUsernametxtbxStaffUsername.ForeColor = Color.Black;
+            txtbxStaffUsernametxtbxStaffUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxStaffUsernametxtbxStaffUsername.Location = new Point(49, 230);
+            txtbxStaffUsernametxtbxStaffUsername.Margin = new Padding(3, 4, 3, 4);
+            txtbxStaffUsernametxtbxStaffUsername.Name = "txtbxStaffUsernametxtbxStaffUsername";
+            txtbxStaffUsernametxtbxStaffUsername.PasswordChar = '\0';
+            txtbxStaffUsernametxtbxStaffUsername.PlaceholderForeColor = Color.LightCyan;
+            txtbxStaffUsernametxtbxStaffUsername.PlaceholderText = "";
+            txtbxStaffUsernametxtbxStaffUsername.SelectedText = "";
+            txtbxStaffUsernametxtbxStaffUsername.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtbxStaffUsernametxtbxStaffUsername.Size = new Size(443, 40);
+            txtbxStaffUsernametxtbxStaffUsername.TabIndex = 56;
+            // 
+            // txtbxStaffLastName
+            // 
+            txtbxStaffLastName.BackColor = Color.Transparent;
+            txtbxStaffLastName.BorderRadius = 10;
+            txtbxStaffLastName.CustomizableEdges = customizableEdges5;
+            txtbxStaffLastName.DefaultText = "";
+            txtbxStaffLastName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbxStaffLastName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbxStaffLastName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbxStaffLastName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbxStaffLastName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxStaffLastName.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbxStaffLastName.ForeColor = Color.Black;
+            txtbxStaffLastName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxStaffLastName.Location = new Point(509, 139);
+            txtbxStaffLastName.Margin = new Padding(3, 4, 3, 4);
+            txtbxStaffLastName.Name = "txtbxStaffLastName";
+            txtbxStaffLastName.PasswordChar = '\0';
+            txtbxStaffLastName.PlaceholderForeColor = Color.LightCyan;
+            txtbxStaffLastName.PlaceholderText = "";
+            txtbxStaffLastName.SelectedText = "";
+            txtbxStaffLastName.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtbxStaffLastName.Size = new Size(443, 40);
+            txtbxStaffLastName.TabIndex = 55;
+            // 
+            // txtbxFirstName
+            // 
+            txtbxFirstName.BackColor = Color.Transparent;
+            txtbxFirstName.BorderRadius = 10;
+            txtbxFirstName.CustomizableEdges = customizableEdges7;
+            txtbxFirstName.DefaultText = "";
+            txtbxFirstName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbxFirstName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbxFirstName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbxFirstName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbxFirstName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxFirstName.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbxFirstName.ForeColor = Color.Black;
+            txtbxFirstName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxFirstName.Location = new Point(49, 139);
+            txtbxFirstName.Margin = new Padding(3, 4, 3, 4);
+            txtbxFirstName.Name = "txtbxFirstName";
+            txtbxFirstName.PasswordChar = '\0';
+            txtbxFirstName.PlaceholderForeColor = Color.LightCyan;
+            txtbxFirstName.PlaceholderText = "";
+            txtbxFirstName.SelectedText = "";
+            txtbxFirstName.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtbxFirstName.Size = new Size(443, 40);
+            txtbxFirstName.TabIndex = 54;
             // 
             // DTSTaffEndDate
             // 
@@ -230,106 +330,6 @@
             lblTittle.Size = new Size(342, 27);
             lblTittle.TabIndex = 31;
             lblTittle.Text = "STAFF REGISTRATION FORM";
-            // 
-            // txtbxFirstName
-            // 
-            txtbxFirstName.BackColor = Color.Transparent;
-            txtbxFirstName.BorderRadius = 10;
-            txtbxFirstName.CustomizableEdges = customizableEdges7;
-            txtbxFirstName.DefaultText = "";
-            txtbxFirstName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxFirstName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxFirstName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxFirstName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxFirstName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxFirstName.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbxFirstName.ForeColor = Color.Black;
-            txtbxFirstName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxFirstName.Location = new Point(49, 139);
-            txtbxFirstName.Margin = new Padding(3, 4, 3, 4);
-            txtbxFirstName.Name = "txtbxFirstName";
-            txtbxFirstName.PasswordChar = '\0';
-            txtbxFirstName.PlaceholderForeColor = Color.LightCyan;
-            txtbxFirstName.PlaceholderText = "";
-            txtbxFirstName.SelectedText = "";
-            txtbxFirstName.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtbxFirstName.Size = new Size(443, 40);
-            txtbxFirstName.TabIndex = 54;
-            // 
-            // txtbxStaffLastName
-            // 
-            txtbxStaffLastName.BackColor = Color.Transparent;
-            txtbxStaffLastName.BorderRadius = 10;
-            txtbxStaffLastName.CustomizableEdges = customizableEdges5;
-            txtbxStaffLastName.DefaultText = "";
-            txtbxStaffLastName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxStaffLastName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxStaffLastName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxStaffLastName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxStaffLastName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxStaffLastName.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbxStaffLastName.ForeColor = Color.Black;
-            txtbxStaffLastName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxStaffLastName.Location = new Point(509, 139);
-            txtbxStaffLastName.Margin = new Padding(3, 4, 3, 4);
-            txtbxStaffLastName.Name = "txtbxStaffLastName";
-            txtbxStaffLastName.PasswordChar = '\0';
-            txtbxStaffLastName.PlaceholderForeColor = Color.LightCyan;
-            txtbxStaffLastName.PlaceholderText = "";
-            txtbxStaffLastName.SelectedText = "";
-            txtbxStaffLastName.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtbxStaffLastName.Size = new Size(443, 40);
-            txtbxStaffLastName.TabIndex = 55;
-            // 
-            // txtbxStaffUsernametxtbxStaffUsername
-            // 
-            txtbxStaffUsernametxtbxStaffUsername.BackColor = Color.Transparent;
-            txtbxStaffUsernametxtbxStaffUsername.BorderRadius = 10;
-            txtbxStaffUsernametxtbxStaffUsername.CustomizableEdges = customizableEdges3;
-            txtbxStaffUsernametxtbxStaffUsername.DefaultText = "";
-            txtbxStaffUsernametxtbxStaffUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxStaffUsernametxtbxStaffUsername.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxStaffUsernametxtbxStaffUsername.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxStaffUsernametxtbxStaffUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxStaffUsernametxtbxStaffUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxStaffUsernametxtbxStaffUsername.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbxStaffUsernametxtbxStaffUsername.ForeColor = Color.Black;
-            txtbxStaffUsernametxtbxStaffUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxStaffUsernametxtbxStaffUsername.Location = new Point(49, 230);
-            txtbxStaffUsernametxtbxStaffUsername.Margin = new Padding(3, 4, 3, 4);
-            txtbxStaffUsernametxtbxStaffUsername.Name = "txtbxStaffUsernametxtbxStaffUsername";
-            txtbxStaffUsernametxtbxStaffUsername.PasswordChar = '\0';
-            txtbxStaffUsernametxtbxStaffUsername.PlaceholderForeColor = Color.LightCyan;
-            txtbxStaffUsernametxtbxStaffUsername.PlaceholderText = "";
-            txtbxStaffUsernametxtbxStaffUsername.SelectedText = "";
-            txtbxStaffUsernametxtbxStaffUsername.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtbxStaffUsernametxtbxStaffUsername.Size = new Size(443, 40);
-            txtbxStaffUsernametxtbxStaffUsername.TabIndex = 56;
-            // 
-            // txtbxStaffPassword
-            // 
-            txtbxStaffPassword.BackColor = Color.Transparent;
-            txtbxStaffPassword.BorderRadius = 10;
-            txtbxStaffPassword.CustomizableEdges = customizableEdges1;
-            txtbxStaffPassword.DefaultText = "";
-            txtbxStaffPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxStaffPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxStaffPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxStaffPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxStaffPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxStaffPassword.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbxStaffPassword.ForeColor = Color.Black;
-            txtbxStaffPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxStaffPassword.Location = new Point(509, 230);
-            txtbxStaffPassword.Margin = new Padding(3, 4, 3, 4);
-            txtbxStaffPassword.Name = "txtbxStaffPassword";
-            txtbxStaffPassword.PasswordChar = '\0';
-            txtbxStaffPassword.PlaceholderForeColor = Color.LightCyan;
-            txtbxStaffPassword.PlaceholderText = "";
-            txtbxStaffPassword.SelectedText = "";
-            txtbxStaffPassword.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtbxStaffPassword.Size = new Size(443, 40);
-            txtbxStaffPassword.TabIndex = 57;
             // 
             // RegisterStaff
             // 

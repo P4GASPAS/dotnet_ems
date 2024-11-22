@@ -37,7 +37,6 @@
             filter = new ComboBox();
             lblTittle = new Label();
             registrantsData = new DataGridView();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             ticketID = new DataGridViewTextBoxColumn();
             eventID = new DataGridViewTextBoxColumn();
             TicketIDRegistrant = new DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@
             registantTicketype = new DataGridViewTextBoxColumn();
             RegistrantContactNumber = new DataGridViewTextBoxColumn();
             registantAction = new DataGridViewTextBoxColumn();
+            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)registrantsData).BeginInit();
             SuspendLayout();
@@ -63,7 +63,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1010, 605);
             panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // searchRegistrant
             // 
@@ -126,25 +125,6 @@
             registrantsData.Size = new Size(1009, 428);
             registrantsData.TabIndex = 53;
             // 
-            // btnAddEvent
-            // 
-            btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges3;
-            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAddEvent.FillColor = Color.LimeGreen;
-            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddEvent.ForeColor = Color.Black;
-            btnAddEvent.Location = new Point(799, 529);
-            btnAddEvent.Margin = new Padding(2);
-            btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnAddEvent.Size = new Size(153, 40);
-            btnAddEvent.TabIndex = 52;
-            btnAddEvent.Text = "Add Registrant";
-            // 
             // ticketID
             // 
             ticketID.HeaderText = "ID";
@@ -200,6 +180,26 @@
             registantAction.MinimumWidth = 8;
             registantAction.Name = "registantAction";
             registantAction.Width = 150;
+            // 
+            // btnAddEvent
+            // 
+            btnAddEvent.BorderRadius = 20;
+            btnAddEvent.CustomizableEdges = customizableEdges3;
+            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAddEvent.FillColor = Color.LimeGreen;
+            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddEvent.ForeColor = Color.Black;
+            btnAddEvent.Location = new Point(799, 529);
+            btnAddEvent.Margin = new Padding(2);
+            btnAddEvent.Name = "btnAddEvent";
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnAddEvent.Size = new Size(153, 40);
+            btnAddEvent.TabIndex = 52;
+            btnAddEvent.Text = "Add Registrant";
+            btnAddEvent.Click += btnAddEvent_Click;
             // 
             // ManageRegistrants
             // 

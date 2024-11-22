@@ -12,9 +12,19 @@ namespace event_management_system.components
 {
     public partial class ManageEvents : UserControl
     {
-        public ManageEvents()
+        private Form1 form1;
+        private EventRegistration eventRegistration;
+        public ManageEvents(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
+        }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            eventRegistration = new EventRegistration();
+            this.form1.ClearDynamicPanel();
+            this.form1.AddDynamicPanel(eventRegistration);
         }
     }
 }

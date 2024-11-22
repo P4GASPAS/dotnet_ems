@@ -18,6 +18,7 @@ namespace event_management_system.components
         private ManageEvents manageEvents;
         private ManageTicket manageTicket;
         private ManageRegistrants manageRegistrants;
+        private Transactions transactions;
         public SidebarPanel(Form1 form1)
         {
             InitializeComponent();
@@ -28,54 +29,42 @@ namespace event_management_system.components
         {
             form1.ClearDynamicPanel();
             dashBoard = new dashboard();
-            form1.dynamicPanel.Controls.Add(dashBoard);
-            dashBoard.Dock = DockStyle.Fill;
-            form1.dynamicPanel.ResumeLayout();
+            form1.AddDynamicPanel(dashBoard);
         }
 
         private void btnIconStaff_Click(object sender, EventArgs e)
         {
             form1.ClearDynamicPanel();
-            manageStaffs = new ManageStaffs();
-            form1.dynamicPanel.Controls.Add(manageStaffs);
-            dashBoard.Dock = DockStyle.Fill;
-            form1.dynamicPanel.ResumeLayout();
+            manageStaffs = new ManageStaffs(this.form1);
+            form1.AddDynamicPanel(manageStaffs);
         }
 
         private void btnIconEvents_Click(object sender, EventArgs e)
         {
             form1.ClearDynamicPanel();
-            manageEvents = new ManageEvents();
-            form1.dynamicPanel.Controls.Add(manageEvents);
-            dashBoard.Dock = DockStyle.Fill;
-            form1.dynamicPanel.ResumeLayout();
+            manageEvents = new ManageEvents(this.form1);
+            form1.AddDynamicPanel(manageEvents);
         }
 
         private void btnIconTicket_Click(object sender, EventArgs e)
         {
             form1.ClearDynamicPanel();
-            manageTicket = new ManageTicket();
-            form1.dynamicPanel.Controls.Add(manageTicket);
-            dashBoard.Dock = DockStyle.Fill;
-            form1.dynamicPanel.ResumeLayout();
+            manageTicket = new ManageTicket(this.form1);
+            form1.AddDynamicPanel(manageTicket);
         }
 
         private void btnIconRegistrants_Click(object sender, EventArgs e)
         {
             form1.ClearDynamicPanel();
-            manageRegistrants = new ManageRegistrants();
-            form1.dynamicPanel.Controls.Add(manageRegistrants);
-            dashBoard.Dock = DockStyle.Fill;
-            form1.dynamicPanel.ResumeLayout();
+            manageRegistrants = new ManageRegistrants(this.form1);
+            form1.AddDynamicPanel(manageRegistrants);
         }
 
         private void btnIconTransaction_Click(object sender, EventArgs e)
         {
             form1.ClearDynamicPanel();
-            manageStaffs = new ManageStaffs();
-            form1.dynamicPanel.Controls.Add(manageStaffs);
-            dashBoard.Dock = DockStyle.Fill;
-            form1.dynamicPanel.ResumeLayout();
+            transactions = new Transactions();
+            form1.AddDynamicPanel(transactions);
         }
     }
 }

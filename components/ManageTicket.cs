@@ -12,9 +12,19 @@ namespace event_management_system.components
 {
     public partial class ManageTicket : UserControl
     {
-        public ManageTicket()
+        private Form1 form1;
+        private TicketRegistration ticketRegistration;
+        public ManageTicket(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
+        }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            ticketRegistration = new TicketRegistration();
+            form1.ClearDynamicPanel();
+            form1.AddDynamicPanel(ticketRegistration);
         }
     }
 }

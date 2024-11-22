@@ -37,7 +37,6 @@
             filter = new ComboBox();
             label1 = new Label();
             ticketData = new DataGridView();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             ticketID = new DataGridViewTextBoxColumn();
             eventID = new DataGridViewTextBoxColumn();
             registrantID = new DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@
             ticketPrice = new DataGridViewTextBoxColumn();
             ticketQuantity = new DataGridViewTextBoxColumn();
             ticketAction = new DataGridViewTextBoxColumn();
+            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ticketData).BeginInit();
             SuspendLayout();
@@ -125,25 +125,6 @@
             ticketData.Size = new Size(1009, 428);
             ticketData.TabIndex = 48;
             // 
-            // btnAddEvent
-            // 
-            btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges3;
-            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAddEvent.FillColor = Color.LimeGreen;
-            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddEvent.ForeColor = Color.Black;
-            btnAddEvent.Location = new Point(827, 529);
-            btnAddEvent.Margin = new Padding(2);
-            btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnAddEvent.Size = new Size(125, 40);
-            btnAddEvent.TabIndex = 47;
-            btnAddEvent.Text = "Add ticket";
-            // 
             // ticketID
             // 
             ticketID.HeaderText = "ID";
@@ -199,6 +180,26 @@
             ticketAction.MinimumWidth = 8;
             ticketAction.Name = "ticketAction";
             ticketAction.Width = 150;
+            // 
+            // btnAddEvent
+            // 
+            btnAddEvent.BorderRadius = 20;
+            btnAddEvent.CustomizableEdges = customizableEdges3;
+            btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAddEvent.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAddEvent.FillColor = Color.LimeGreen;
+            btnAddEvent.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddEvent.ForeColor = Color.Black;
+            btnAddEvent.Location = new Point(827, 529);
+            btnAddEvent.Margin = new Padding(2);
+            btnAddEvent.Name = "btnAddEvent";
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnAddEvent.Size = new Size(125, 40);
+            btnAddEvent.TabIndex = 47;
+            btnAddEvent.Text = "Add ticket";
+            btnAddEvent.Click += btnAddEvent_Click;
             // 
             // ManageTicket
             // 
