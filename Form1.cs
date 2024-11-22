@@ -7,6 +7,7 @@ namespace event_management_system
     {
         private SidebarPanel sidebarPanel;
         private TopbarPanel topbarPanel;
+        public Panel dynamicPanel;
         public Form1()
         {
             InitializeComponent();
@@ -27,15 +28,24 @@ namespace event_management_system
             mainPanel.Controls.Clear();
         }
 
-        public void AddSideTopPanel()
+        public void AddSideTopDynamicPanel()
         {
-            sidebarPanel = new SidebarPanel();
-            topbarPanel = new TopbarPanel();
+            sidebarPanel = new SidebarPanel(this);
+            topbarPanel = new TopbarPanel(this);
+            dynamicPanel = new Panel();
             this.mainPanel.Controls.Add(sidebarPanel);
             sidebarPanel.Location = new Point(0, 0);
             this.mainPanel.Controls.Add(topbarPanel);
             topbarPanel.Location = new Point(252, 0);
+            this.mainPanel.Controls.Add(dynamicPanel);
+            dynamicPanel.Location = new Point(252, 68);
+            dynamicPanel.Size = new Size(1262, 673);
             this.mainPanel.ResumeLayout();
+        }
+
+        public void ClearDynamicPanel()
+        {
+            dynamicPanel.Controls.Clear();
         }
     }
 }
