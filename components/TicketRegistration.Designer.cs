@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
+            txtboxEventName = new Guna.UI2.WinForms.Guna2TextBox();
+            lblEvent = new Label();
             lblQntity = new Label();
             NumericUDEventCapacity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             txtbxTicketPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,15 +48,13 @@
             lblTicketType = new Label();
             btnAddTicket = new Guna.UI2.WinForms.Guna2Button();
             lblTittle = new Label();
-            lblEvent = new Label();
-            txtboxEventID = new Guna.UI2.WinForms.Guna2TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)NumericUDEventCapacity).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(txtboxEventID);
+            panel1.Controls.Add(txtboxEventName);
             panel1.Controls.Add(lblEvent);
             panel1.Controls.Add(lblQntity);
             panel1.Controls.Add(NumericUDEventCapacity);
@@ -70,6 +70,42 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1010, 605);
             panel1.TabIndex = 0;
+            // 
+            // txtboxEventName
+            // 
+            txtboxEventName.BackColor = Color.Transparent;
+            txtboxEventName.BorderRadius = 10;
+            txtboxEventName.CustomizableEdges = customizableEdges1;
+            txtboxEventName.DefaultText = "";
+            txtboxEventName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtboxEventName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtboxEventName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtboxEventName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtboxEventName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtboxEventName.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtboxEventName.ForeColor = Color.Black;
+            txtboxEventName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtboxEventName.Location = new Point(47, 121);
+            txtboxEventName.Margin = new Padding(3, 4, 3, 4);
+            txtboxEventName.Name = "txtboxEventName";
+            txtboxEventName.PasswordChar = '\0';
+            txtboxEventName.PlaceholderForeColor = Color.LightCyan;
+            txtboxEventName.PlaceholderText = "";
+            txtboxEventName.SelectedText = "";
+            txtboxEventName.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtboxEventName.Size = new Size(291, 40);
+            txtboxEventName.TabIndex = 65;
+            // 
+            // lblEvent
+            // 
+            lblEvent.AutoSize = true;
+            lblEvent.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEvent.Location = new Point(47, 94);
+            lblEvent.Margin = new Padding(2, 0, 2, 0);
+            lblEvent.Name = "lblEvent";
+            lblEvent.Size = new Size(116, 23);
+            lblEvent.TabIndex = 64;
+            lblEvent.Text = "Event Name";
             // 
             // lblQntity
             // 
@@ -214,42 +250,6 @@
             lblTittle.Text = "TICKET REGISTRATION FORM";
             lblTittle.Click += lblTittle_Click;
             // 
-            // lblEvent
-            // 
-            lblEvent.AutoSize = true;
-            lblEvent.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEvent.Location = new Point(47, 94);
-            lblEvent.Margin = new Padding(2, 0, 2, 0);
-            lblEvent.Name = "lblEvent";
-            lblEvent.Size = new Size(85, 23);
-            lblEvent.TabIndex = 64;
-            lblEvent.Text = "Event ID";
-            // 
-            // txtboxEventID
-            // 
-            txtboxEventID.BackColor = Color.Transparent;
-            txtboxEventID.BorderRadius = 10;
-            txtboxEventID.CustomizableEdges = customizableEdges1;
-            txtboxEventID.DefaultText = "";
-            txtboxEventID.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtboxEventID.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtboxEventID.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtboxEventID.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtboxEventID.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtboxEventID.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtboxEventID.ForeColor = Color.Black;
-            txtboxEventID.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtboxEventID.Location = new Point(47, 121);
-            txtboxEventID.Margin = new Padding(3, 4, 3, 4);
-            txtboxEventID.Name = "txtboxEventID";
-            txtboxEventID.PasswordChar = '\0';
-            txtboxEventID.PlaceholderForeColor = Color.LightCyan;
-            txtboxEventID.PlaceholderText = "";
-            txtboxEventID.SelectedText = "";
-            txtboxEventID.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtboxEventID.Size = new Size(291, 40);
-            txtboxEventID.TabIndex = 65;
-            // 
             // TicketRegistration
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -276,7 +276,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtbxTicketPrice;
         private Label lblQntity;
         private Guna.UI2.WinForms.Guna2NumericUpDown NumericUDEventCapacity;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxEventID;
+        private Guna.UI2.WinForms.Guna2TextBox txtboxEventName;
         private Label lblEvent;
     }
 }
