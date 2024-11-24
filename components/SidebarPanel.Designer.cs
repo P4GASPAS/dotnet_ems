@@ -38,6 +38,7 @@
             btnIconEvents = new FontAwesome.Sharp.IconButton();
             btnIconStaff = new FontAwesome.Sharp.IconButton();
             btnIconHome = new FontAwesome.Sharp.IconButton();
+            btnReports = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)LogoPic).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnReports);
             panel1.Controls.Add(btnIconTransaction);
             panel1.Controls.Add(btnIconRegistrants);
             panel1.Controls.Add(btnIconTicket);
@@ -197,6 +199,25 @@
             btnIconHome.UseVisualStyleBackColor = false;
             btnIconHome.Click += btnIconHome_Click;
             // 
+            // btnReports
+            // 
+            btnReports.BackColor = Color.SkyBlue;
+            btnReports.FlatAppearance.BorderSize = 0;
+            btnReports.FlatStyle = FlatStyle.Flat;
+            btnReports.Font = new Font("Arial Rounded MT Bold", 12F);
+            btnReports.IconChar = FontAwesome.Sharp.IconChar.Receipt;
+            btnReports.IconColor = Color.Black;
+            btnReports.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnReports.Location = new Point(2, 578);
+            btnReports.Margin = new Padding(2);
+            btnReports.Name = "btnReports";
+            btnReports.Padding = new Padding(0, 0, 48, 0);
+            btnReports.Size = new Size(250, 54);
+            btnReports.TabIndex = 20;
+            btnReports.Text = "Reports";
+            btnReports.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReports.UseVisualStyleBackColor = false;
+            // 
             // SidebarPanel
             // 
             AccessibleName = "SideBar";
@@ -223,5 +244,6 @@
         private FontAwesome.Sharp.IconButton btnIconEvents;
         private FontAwesome.Sharp.IconButton btnIconTransaction;
         private FontAwesome.Sharp.IconButton btnIconRegistrants;
+        private FontAwesome.Sharp.IconButton btnReports;
     }
 }
