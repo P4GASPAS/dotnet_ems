@@ -39,6 +39,7 @@
             btnIconStaff = new FontAwesome.Sharp.IconButton();
             btnIconHome = new FontAwesome.Sharp.IconButton();
             btnReports = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)LogoPic).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -66,6 +67,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(btnReports);
             panel1.Controls.Add(btnIconTransaction);
             panel1.Controls.Add(btnIconRegistrants);
@@ -90,7 +92,7 @@
             btnIconTransaction.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
             btnIconTransaction.IconColor = Color.Black;
             btnIconTransaction.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconTransaction.Location = new Point(2, 521);
+            btnIconTransaction.Location = new Point(2, 543);
             btnIconTransaction.Margin = new Padding(2);
             btnIconTransaction.Name = "btnIconTransaction";
             btnIconTransaction.Size = new Size(250, 54);
@@ -109,7 +111,7 @@
             btnIconRegistrants.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
             btnIconRegistrants.IconColor = Color.Black;
             btnIconRegistrants.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconRegistrants.Location = new Point(1, 466);
+            btnIconRegistrants.Location = new Point(1, 440);
             btnIconRegistrants.Margin = new Padding(2);
             btnIconRegistrants.Name = "btnIconRegistrants";
             btnIconRegistrants.Size = new Size(252, 54);
@@ -128,7 +130,7 @@
             btnIconTicket.IconChar = FontAwesome.Sharp.IconChar.TicketSimple;
             btnIconTicket.IconColor = Color.Black;
             btnIconTicket.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconTicket.Location = new Point(2, 410);
+            btnIconTicket.Location = new Point(2, 384);
             btnIconTicket.Margin = new Padding(2);
             btnIconTicket.Name = "btnIconTicket";
             btnIconTicket.Padding = new Padding(0, 0, 40, 0);
@@ -148,7 +150,7 @@
             btnIconEvents.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
             btnIconEvents.IconColor = Color.Black;
             btnIconEvents.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconEvents.Location = new Point(2, 355);
+            btnIconEvents.Location = new Point(2, 329);
             btnIconEvents.Margin = new Padding(2);
             btnIconEvents.Name = "btnIconEvents";
             btnIconEvents.Padding = new Padding(0, 0, 48, 0);
@@ -168,7 +170,7 @@
             btnIconStaff.IconChar = FontAwesome.Sharp.IconChar.UserLarge;
             btnIconStaff.IconColor = Color.Black;
             btnIconStaff.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconStaff.Location = new Point(1, 300);
+            btnIconStaff.Location = new Point(1, 274);
             btnIconStaff.Margin = new Padding(2);
             btnIconStaff.Name = "btnIconStaff";
             btnIconStaff.Padding = new Padding(0, 0, 56, 0);
@@ -188,7 +190,7 @@
             btnIconHome.IconChar = FontAwesome.Sharp.IconChar.House;
             btnIconHome.IconColor = Color.Black;
             btnIconHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconHome.Location = new Point(0, 245);
+            btnIconHome.Location = new Point(0, 219);
             btnIconHome.Margin = new Padding(2);
             btnIconHome.Name = "btnIconHome";
             btnIconHome.Padding = new Padding(0, 0, 48, 0);
@@ -208,7 +210,7 @@
             btnReports.IconChar = FontAwesome.Sharp.IconChar.Receipt;
             btnReports.IconColor = Color.Black;
             btnReports.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnReports.Location = new Point(2, 578);
+            btnReports.Location = new Point(2, 600);
             btnReports.Margin = new Padding(2);
             btnReports.Name = "btnReports";
             btnReports.Padding = new Padding(0, 0, 48, 0);
@@ -217,6 +219,24 @@
             btnReports.Text = "Reports";
             btnReports.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReports.UseVisualStyleBackColor = false;
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.SkyBlue;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Arial Rounded MT Bold", 12F);
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserPen;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(2, 490);
+            iconButton1.Margin = new Padding(2);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(252, 54);
+            iconButton1.TabIndex = 21;
+            iconButton1.Text = "Registration";
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = false;
             // 
             // SidebarPanel
             // 
@@ -245,5 +265,6 @@
         private FontAwesome.Sharp.IconButton btnIconTransaction;
         private FontAwesome.Sharp.IconButton btnIconRegistrants;
         private FontAwesome.Sharp.IconButton btnReports;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

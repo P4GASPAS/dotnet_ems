@@ -39,12 +39,14 @@
             btnIconEvents = new FontAwesome.Sharp.IconButton();
             btnIconHome = new FontAwesome.Sharp.IconButton();
             StaffUsername = new Label();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             panelStaff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoPic).BeginInit();
             SuspendLayout();
             // 
             // panelStaff
             // 
+            panelStaff.Controls.Add(iconButton1);
             panelStaff.Controls.Add(StaffUsername);
             panelStaff.Controls.Add(btnReports);
             panelStaff.Controls.Add(btnIconTransaction);
@@ -90,7 +92,7 @@
             btnReports.IconChar = FontAwesome.Sharp.IconChar.Receipt;
             btnReports.IconColor = Color.Black;
             btnReports.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnReports.Location = new Point(3, 518);
+            btnReports.Location = new Point(3, 567);
             btnReports.Margin = new Padding(2);
             btnReports.Name = "btnReports";
             btnReports.Padding = new Padding(0, 0, 48, 0);
@@ -109,7 +111,7 @@
             btnIconTransaction.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
             btnIconTransaction.IconColor = Color.Black;
             btnIconTransaction.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIconTransaction.Location = new Point(3, 461);
+            btnIconTransaction.Location = new Point(3, 510);
             btnIconTransaction.Margin = new Padding(2);
             btnIconTransaction.Name = "btnIconTransaction";
             btnIconTransaction.Size = new Size(250, 54);
@@ -203,6 +205,24 @@
             StaffUsername.TabIndex = 28;
             StaffUsername.Text = "username";
             // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.SkyBlue;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Arial Rounded MT Bold", 12F);
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserPen;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(3, 458);
+            iconButton1.Margin = new Padding(2);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(252, 54);
+            iconButton1.TabIndex = 29;
+            iconButton1.Text = "Registration";
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = false;
+            // 
             // StaffSidebarPanel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -229,5 +249,6 @@
         private FontAwesome.Sharp.IconButton btnIconEvents;
         private FontAwesome.Sharp.IconButton btnIconHome;
         private Label StaffUsername;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
