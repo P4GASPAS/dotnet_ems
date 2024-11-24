@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             dataEvent = new DataGridView();
-            EventID = new DataGridViewTextBoxColumn();
-            EventName = new DataGridViewTextBoxColumn();
-            EventCategory = new DataGridViewTextBoxColumn();
-            EventDesc = new DataGridViewTextBoxColumn();
-            EventAccess = new DataGridViewTextBoxColumn();
-            EventLocation = new DataGridViewTextBoxColumn();
-            EventCapacity = new DataGridViewTextBoxColumn();
-            EventStatus = new DataGridViewTextBoxColumn();
-            EventAction = new DataGridViewTextBoxColumn();
             searchEvent = new Guna.UI2.WinForms.Guna2TextBox();
             filter = new ComboBox();
             label3 = new Label();
+            EventID = new DataGridViewTextBoxColumn();
+            EventName = new DataGridViewTextBoxColumn();
+            EventType = new DataGridViewTextBoxColumn();
+            EventCapacity = new DataGridViewTextBoxColumn();
+            EventDesc = new DataGridViewTextBoxColumn();
+            EventVenue = new DataGridViewTextBoxColumn();
+            EventOrganizer = new DataGridViewTextBoxColumn();
+            EventStart = new DataGridViewTextBoxColumn();
+            EventEnd = new DataGridViewTextBoxColumn();
+            EventStatus = new DataGridViewTextBoxColumn();
+            EventAction = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataEvent).BeginInit();
             SuspendLayout();
@@ -69,7 +71,7 @@
             // btnAddEvent
             // 
             btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges1;
+            btnAddEvent.CustomizableEdges = customizableEdges5;
             btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
             btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -80,7 +82,7 @@
             btnAddEvent.Location = new Point(827, 529);
             btnAddEvent.Margin = new Padding(2);
             btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnAddEvent.Size = new Size(125, 40);
             btnAddEvent.TabIndex = 50;
             btnAddEvent.Text = "Add event";
@@ -90,7 +92,7 @@
             // 
             dataEvent.BackgroundColor = Color.Azure;
             dataEvent.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataEvent.Columns.AddRange(new DataGridViewColumn[] { EventID, EventName, EventCategory, EventDesc, EventAccess, EventLocation, EventCapacity, EventStatus, EventAction });
+            dataEvent.Columns.AddRange(new DataGridViewColumn[] { EventID, EventName, EventType, EventCapacity, EventDesc, EventVenue, EventOrganizer, EventStart, EventEnd, EventStatus, EventAction });
             dataEvent.Location = new Point(1, 84);
             dataEvent.Name = "dataEvent";
             dataEvent.RowHeadersVisible = false;
@@ -98,73 +100,10 @@
             dataEvent.Size = new Size(1009, 428);
             dataEvent.TabIndex = 49;
             // 
-            // EventID
-            // 
-            EventID.HeaderText = "ID";
-            EventID.MinimumWidth = 6;
-            EventID.Name = "EventID";
-            EventID.Width = 125;
-            // 
-            // EventName
-            // 
-            EventName.HeaderText = "Event Name";
-            EventName.MinimumWidth = 6;
-            EventName.Name = "EventName";
-            EventName.Width = 125;
-            // 
-            // EventCategory
-            // 
-            EventCategory.HeaderText = "Category";
-            EventCategory.MinimumWidth = 6;
-            EventCategory.Name = "EventCategory";
-            EventCategory.Width = 125;
-            // 
-            // EventDesc
-            // 
-            EventDesc.HeaderText = "Description";
-            EventDesc.MinimumWidth = 6;
-            EventDesc.Name = "EventDesc";
-            EventDesc.Width = 125;
-            // 
-            // EventAccess
-            // 
-            EventAccess.HeaderText = "Access Type";
-            EventAccess.MinimumWidth = 6;
-            EventAccess.Name = "EventAccess";
-            EventAccess.Width = 125;
-            // 
-            // EventLocation
-            // 
-            EventLocation.HeaderText = "Location";
-            EventLocation.MinimumWidth = 6;
-            EventLocation.Name = "EventLocation";
-            EventLocation.Width = 125;
-            // 
-            // EventCapacity
-            // 
-            EventCapacity.HeaderText = "Capacity";
-            EventCapacity.MinimumWidth = 6;
-            EventCapacity.Name = "EventCapacity";
-            EventCapacity.Width = 125;
-            // 
-            // EventStatus
-            // 
-            EventStatus.HeaderText = "Status";
-            EventStatus.MinimumWidth = 6;
-            EventStatus.Name = "EventStatus";
-            EventStatus.Width = 125;
-            // 
-            // EventAction
-            // 
-            EventAction.HeaderText = "Actions";
-            EventAction.MinimumWidth = 6;
-            EventAction.Name = "EventAction";
-            EventAction.Width = 125;
-            // 
             // searchEvent
             // 
             searchEvent.BorderRadius = 20;
-            searchEvent.CustomizableEdges = customizableEdges3;
+            searchEvent.CustomizableEdges = customizableEdges7;
             searchEvent.DefaultText = "search event";
             searchEvent.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             searchEvent.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -179,7 +118,7 @@
             searchEvent.PasswordChar = '\0';
             searchEvent.PlaceholderText = "";
             searchEvent.SelectedText = "";
-            searchEvent.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            searchEvent.ShadowDecoration.CustomizableEdges = customizableEdges8;
             searchEvent.Size = new Size(180, 34);
             searchEvent.TabIndex = 47;
             // 
@@ -188,7 +127,7 @@
             filter.BackColor = Color.Azure;
             filter.FlatStyle = FlatStyle.Flat;
             filter.FormattingEnabled = true;
-            filter.Items.AddRange(new object[] { "Private", "Public" });
+            filter.Items.AddRange(new object[] { "Completed ", "In progress" });
             filter.Location = new Point(909, 32);
             filter.Name = "filter";
             filter.Size = new Size(72, 27);
@@ -207,6 +146,83 @@
             label3.Size = new Size(170, 27);
             label3.TabIndex = 33;
             label3.Text = "Manage Event";
+            // 
+            // EventID
+            // 
+            EventID.HeaderText = "ID";
+            EventID.MinimumWidth = 6;
+            EventID.Name = "EventID";
+            EventID.Width = 125;
+            // 
+            // EventName
+            // 
+            EventName.HeaderText = "Event Name";
+            EventName.MinimumWidth = 6;
+            EventName.Name = "EventName";
+            EventName.Width = 125;
+            // 
+            // EventType
+            // 
+            EventType.HeaderText = "Event Type";
+            EventType.MinimumWidth = 6;
+            EventType.Name = "EventType";
+            EventType.Width = 125;
+            // 
+            // EventCapacity
+            // 
+            EventCapacity.HeaderText = "Capacity";
+            EventCapacity.MinimumWidth = 6;
+            EventCapacity.Name = "EventCapacity";
+            EventCapacity.Width = 125;
+            // 
+            // EventDesc
+            // 
+            EventDesc.HeaderText = "Description";
+            EventDesc.MinimumWidth = 6;
+            EventDesc.Name = "EventDesc";
+            EventDesc.Width = 125;
+            // 
+            // EventVenue
+            // 
+            EventVenue.HeaderText = "Venue";
+            EventVenue.MinimumWidth = 6;
+            EventVenue.Name = "EventVenue";
+            EventVenue.Width = 125;
+            // 
+            // EventOrganizer
+            // 
+            EventOrganizer.HeaderText = "Event organizer";
+            EventOrganizer.MinimumWidth = 6;
+            EventOrganizer.Name = "EventOrganizer";
+            EventOrganizer.Width = 125;
+            // 
+            // EventStart
+            // 
+            EventStart.HeaderText = "Start";
+            EventStart.MinimumWidth = 6;
+            EventStart.Name = "EventStart";
+            EventStart.Width = 125;
+            // 
+            // EventEnd
+            // 
+            EventEnd.HeaderText = "End";
+            EventEnd.MinimumWidth = 6;
+            EventEnd.Name = "EventEnd";
+            EventEnd.Width = 125;
+            // 
+            // EventStatus
+            // 
+            EventStatus.HeaderText = "Status";
+            EventStatus.MinimumWidth = 6;
+            EventStatus.Name = "EventStatus";
+            EventStatus.Width = 125;
+            // 
+            // EventAction
+            // 
+            EventAction.HeaderText = "Actions";
+            EventAction.MinimumWidth = 6;
+            EventAction.Name = "EventAction";
+            EventAction.Width = 125;
             // 
             // ManageEvents
             // 
@@ -228,15 +244,17 @@
         private Guna.UI2.WinForms.Guna2TextBox searchEvent;
         private ComboBox filter;
         private DataGridView dataEvent;
+        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
         private DataGridViewTextBoxColumn EventID;
         private DataGridViewTextBoxColumn EventName;
-        private DataGridViewTextBoxColumn EventCategory;
-        private DataGridViewTextBoxColumn EventDesc;
-        private DataGridViewTextBoxColumn EventAccess;
-        private DataGridViewTextBoxColumn EventLocation;
+        private DataGridViewTextBoxColumn EventType;
         private DataGridViewTextBoxColumn EventCapacity;
+        private DataGridViewTextBoxColumn EventDesc;
+        private DataGridViewTextBoxColumn EventVenue;
+        private DataGridViewTextBoxColumn EventOrganizer;
+        private DataGridViewTextBoxColumn EventStart;
+        private DataGridViewTextBoxColumn EventEnd;
         private DataGridViewTextBoxColumn EventStatus;
         private DataGridViewTextBoxColumn EventAction;
-        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
     }
 }
