@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             dataEvent = new DataGridView();
@@ -49,6 +49,7 @@
             EventEnd = new DataGridViewTextBoxColumn();
             EventStatus = new DataGridViewTextBoxColumn();
             EventAction = new DataGridViewTextBoxColumn();
+            EventAvailability = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataEvent).BeginInit();
             SuspendLayout();
@@ -71,7 +72,7 @@
             // btnAddEvent
             // 
             btnAddEvent.BorderRadius = 20;
-            btnAddEvent.CustomizableEdges = customizableEdges5;
+            btnAddEvent.CustomizableEdges = customizableEdges9;
             btnAddEvent.DisabledState.BorderColor = Color.DarkGray;
             btnAddEvent.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAddEvent.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -82,7 +83,7 @@
             btnAddEvent.Location = new Point(827, 529);
             btnAddEvent.Margin = new Padding(2);
             btnAddEvent.Name = "btnAddEvent";
-            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnAddEvent.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnAddEvent.Size = new Size(125, 40);
             btnAddEvent.TabIndex = 50;
             btnAddEvent.Text = "Add event";
@@ -92,7 +93,7 @@
             // 
             dataEvent.BackgroundColor = Color.Azure;
             dataEvent.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataEvent.Columns.AddRange(new DataGridViewColumn[] { EventID, EventName, EventType, EventCapacity, EventDesc, EventVenue, EventOrganizer, EventStart, EventEnd, EventStatus, EventAction });
+            dataEvent.Columns.AddRange(new DataGridViewColumn[] { EventID, EventName, EventType, EventCapacity, EventDesc, EventVenue, EventOrganizer, EventStart, EventEnd, EventStatus, EventAction, EventAvailability });
             dataEvent.Location = new Point(1, 84);
             dataEvent.Name = "dataEvent";
             dataEvent.RowHeadersVisible = false;
@@ -103,7 +104,7 @@
             // searchEvent
             // 
             searchEvent.BorderRadius = 20;
-            searchEvent.CustomizableEdges = customizableEdges7;
+            searchEvent.CustomizableEdges = customizableEdges11;
             searchEvent.DefaultText = "search event";
             searchEvent.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             searchEvent.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -118,7 +119,7 @@
             searchEvent.PasswordChar = '\0';
             searchEvent.PlaceholderText = "";
             searchEvent.SelectedText = "";
-            searchEvent.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            searchEvent.ShadowDecoration.CustomizableEdges = customizableEdges12;
             searchEvent.Size = new Size(180, 34);
             searchEvent.TabIndex = 47;
             // 
@@ -224,6 +225,13 @@
             EventAction.Name = "EventAction";
             EventAction.Width = 125;
             // 
+            // EventAvailability
+            // 
+            EventAvailability.HeaderText = "Ticket Availability";
+            EventAvailability.MinimumWidth = 6;
+            EventAvailability.Name = "EventAvailability";
+            EventAvailability.Width = 125;
+            // 
             // ManageEvents
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -256,5 +264,6 @@
         private DataGridViewTextBoxColumn EventEnd;
         private DataGridViewTextBoxColumn EventStatus;
         private DataGridViewTextBoxColumn EventAction;
+        private DataGridViewTextBoxColumn EventAvailability;
     }
 }

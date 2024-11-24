@@ -31,6 +31,8 @@ namespace event_management_system.components
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -47,10 +49,10 @@ namespace event_management_system.components
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTittle = new Label();
             mainpanelEvent = new Panel();
+            txtbxEventOrganizer = new Guna.UI2.WinForms.Guna2TextBox();
+            lblEventOrganizer = new Label();
             lblEventType = new Label();
             txtbxEventCategory = new Guna.UI2.WinForms.Guna2TextBox();
             lblCapacity = new Label();
@@ -66,8 +68,9 @@ namespace event_management_system.components
             btnAddStaff = new Guna.UI2.WinForms.Guna2Button();
             txtbxEventName = new Guna.UI2.WinForms.Guna2TextBox();
             lblEventName = new Label();
-            lblEventOrganizer = new Label();
-            txtbxEventOrganizer = new Guna.UI2.WinForms.Guna2TextBox();
+            lblTicketAvailability = new Label();
+            chckbxEventNo = new Guna.UI2.WinForms.Guna2CheckBox();
+            cckbxEventYes = new Guna.UI2.WinForms.Guna2CheckBox();
             mainpanelEvent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)NumericUDEventCapacity).BeginInit();
             SuspendLayout();
@@ -88,6 +91,9 @@ namespace event_management_system.components
             // mainpanelEvent
             // 
             mainpanelEvent.BackColor = Color.Azure;
+            mainpanelEvent.Controls.Add(chckbxEventNo);
+            mainpanelEvent.Controls.Add(cckbxEventYes);
+            mainpanelEvent.Controls.Add(lblTicketAvailability);
             mainpanelEvent.Controls.Add(txtbxEventOrganizer);
             mainpanelEvent.Controls.Add(lblEventOrganizer);
             mainpanelEvent.Controls.Add(lblEventType);
@@ -112,6 +118,42 @@ namespace event_management_system.components
             mainpanelEvent.Name = "mainpanelEvent";
             mainpanelEvent.Size = new Size(1010, 605);
             mainpanelEvent.TabIndex = 0;
+            // 
+            // txtbxEventOrganizer
+            // 
+            txtbxEventOrganizer.BackColor = Color.Transparent;
+            txtbxEventOrganizer.BorderRadius = 10;
+            txtbxEventOrganizer.CustomizableEdges = customizableEdges1;
+            txtbxEventOrganizer.DefaultText = "";
+            txtbxEventOrganizer.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtbxEventOrganizer.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtbxEventOrganizer.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtbxEventOrganizer.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtbxEventOrganizer.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxEventOrganizer.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbxEventOrganizer.ForeColor = Color.Black;
+            txtbxEventOrganizer.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtbxEventOrganizer.Location = new Point(47, 368);
+            txtbxEventOrganizer.Margin = new Padding(3, 4, 3, 4);
+            txtbxEventOrganizer.Name = "txtbxEventOrganizer";
+            txtbxEventOrganizer.PasswordChar = '\0';
+            txtbxEventOrganizer.PlaceholderForeColor = Color.LightCyan;
+            txtbxEventOrganizer.PlaceholderText = "";
+            txtbxEventOrganizer.SelectedText = "";
+            txtbxEventOrganizer.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtbxEventOrganizer.Size = new Size(907, 40);
+            txtbxEventOrganizer.TabIndex = 67;
+            // 
+            // lblEventOrganizer
+            // 
+            lblEventOrganizer.AutoSize = true;
+            lblEventOrganizer.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEventOrganizer.Location = new Point(47, 341);
+            lblEventOrganizer.Margin = new Padding(2, 0, 2, 0);
+            lblEventOrganizer.Name = "lblEventOrganizer";
+            lblEventOrganizer.Size = new Size(146, 23);
+            lblEventOrganizer.TabIndex = 66;
+            lblEventOrganizer.Text = "Event organizer";
             // 
             // lblEventType
             // 
@@ -357,41 +399,54 @@ namespace event_management_system.components
             lblEventName.TabIndex = 49;
             lblEventName.Text = "Event name";
             // 
-            // lblEventOrganizer
+            // lblTicketAvailability
             // 
-            lblEventOrganizer.AutoSize = true;
-            lblEventOrganizer.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEventOrganizer.Location = new Point(47, 341);
-            lblEventOrganizer.Margin = new Padding(2, 0, 2, 0);
-            lblEventOrganizer.Name = "lblEventOrganizer";
-            lblEventOrganizer.Size = new Size(146, 23);
-            lblEventOrganizer.TabIndex = 66;
-            lblEventOrganizer.Text = "Event organizer";
+            lblTicketAvailability.AutoSize = true;
+            lblTicketAvailability.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTicketAvailability.Location = new Point(661, 434);
+            lblTicketAvailability.Margin = new Padding(2, 0, 2, 0);
+            lblTicketAvailability.Name = "lblTicketAvailability";
+            lblTicketAvailability.Size = new Size(157, 23);
+            lblTicketAvailability.TabIndex = 68;
+            lblTicketAvailability.Text = "Ticket availability";
             // 
-            // txtbxEventOrganizer
+            // chckbxEventNo
             // 
-            txtbxEventOrganizer.BackColor = Color.Transparent;
-            txtbxEventOrganizer.BorderRadius = 10;
-            txtbxEventOrganizer.CustomizableEdges = customizableEdges1;
-            txtbxEventOrganizer.DefaultText = "";
-            txtbxEventOrganizer.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtbxEventOrganizer.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtbxEventOrganizer.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtbxEventOrganizer.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtbxEventOrganizer.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxEventOrganizer.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbxEventOrganizer.ForeColor = Color.Black;
-            txtbxEventOrganizer.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtbxEventOrganizer.Location = new Point(47, 368);
-            txtbxEventOrganizer.Margin = new Padding(3, 4, 3, 4);
-            txtbxEventOrganizer.Name = "txtbxEventOrganizer";
-            txtbxEventOrganizer.PasswordChar = '\0';
-            txtbxEventOrganizer.PlaceholderForeColor = Color.LightCyan;
-            txtbxEventOrganizer.PlaceholderText = "";
-            txtbxEventOrganizer.SelectedText = "";
-            txtbxEventOrganizer.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtbxEventOrganizer.Size = new Size(907, 40);
-            txtbxEventOrganizer.TabIndex = 67;
+            chckbxEventNo.AutoSize = true;
+            chckbxEventNo.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            chckbxEventNo.CheckedState.BorderRadius = 0;
+            chckbxEventNo.CheckedState.BorderThickness = 0;
+            chckbxEventNo.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            chckbxEventNo.CheckMarkColor = Color.Black;
+            chckbxEventNo.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chckbxEventNo.Location = new Point(735, 469);
+            chckbxEventNo.Name = "chckbxEventNo";
+            chckbxEventNo.Size = new Size(51, 23);
+            chckbxEventNo.TabIndex = 70;
+            chckbxEventNo.Text = "No";
+            chckbxEventNo.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            chckbxEventNo.UncheckedState.BorderRadius = 0;
+            chckbxEventNo.UncheckedState.BorderThickness = 0;
+            chckbxEventNo.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            // 
+            // cckbxEventYes
+            // 
+            cckbxEventYes.AutoSize = true;
+            cckbxEventYes.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cckbxEventYes.CheckedState.BorderRadius = 0;
+            cckbxEventYes.CheckedState.BorderThickness = 0;
+            cckbxEventYes.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            cckbxEventYes.CheckMarkColor = Color.Black;
+            cckbxEventYes.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cckbxEventYes.Location = new Point(671, 469);
+            cckbxEventYes.Name = "cckbxEventYes";
+            cckbxEventYes.Size = new Size(57, 23);
+            cckbxEventYes.TabIndex = 69;
+            cckbxEventYes.Text = "Yes";
+            cckbxEventYes.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            cckbxEventYes.UncheckedState.BorderRadius = 0;
+            cckbxEventYes.UncheckedState.BorderThickness = 0;
+            cckbxEventYes.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
             // 
             // EventRegistration
             // 
@@ -432,5 +487,8 @@ namespace event_management_system.components
         private Guna.UI2.WinForms.Guna2TextBox txtbxEventCategory;
         private Label lblEventType;
         private Guna.UI2.WinForms.Guna2TextBox txtbxEventOrganizer;
+        private Label lblTicketAvailability;
+        private Guna.UI2.WinForms.Guna2CheckBox chckbxEventNo;
+        private Guna.UI2.WinForms.Guna2CheckBox cckbxEventYes;
     }
 }

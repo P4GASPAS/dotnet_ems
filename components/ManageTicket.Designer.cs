@@ -37,15 +37,14 @@
             filter = new ComboBox();
             label1 = new Label();
             ticketData = new DataGridView();
+            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             ticketID = new DataGridViewTextBoxColumn();
             eventID = new DataGridViewTextBoxColumn();
-            registrantID = new DataGridViewTextBoxColumn();
             ticketType = new DataGridViewTextBoxColumn();
-            TicketAccess = new DataGridViewTextBoxColumn();
             ticketPrice = new DataGridViewTextBoxColumn();
             ticketQuantity = new DataGridViewTextBoxColumn();
+            TicketStatus = new DataGridViewTextBoxColumn();
             ticketAction = new DataGridViewTextBoxColumn();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ticketData).BeginInit();
             SuspendLayout();
@@ -116,7 +115,7 @@
             // 
             ticketData.BackgroundColor = Color.Azure;
             ticketData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ticketData.Columns.AddRange(new DataGridViewColumn[] { ticketID, eventID, registrantID, ticketType, TicketAccess, ticketPrice, ticketQuantity, ticketAction });
+            ticketData.Columns.AddRange(new DataGridViewColumn[] { ticketID, eventID, ticketType, ticketPrice, ticketQuantity, TicketStatus, ticketAction });
             ticketData.Location = new Point(1, 84);
             ticketData.Margin = new Padding(2);
             ticketData.Name = "ticketData";
@@ -124,62 +123,6 @@
             ticketData.RowHeadersWidth = 62;
             ticketData.Size = new Size(1009, 428);
             ticketData.TabIndex = 48;
-            // 
-            // ticketID
-            // 
-            ticketID.HeaderText = "ID";
-            ticketID.MinimumWidth = 6;
-            ticketID.Name = "ticketID";
-            ticketID.Width = 150;
-            // 
-            // eventID
-            // 
-            eventID.HeaderText = "Event ID";
-            eventID.MinimumWidth = 8;
-            eventID.Name = "eventID";
-            eventID.Width = 150;
-            // 
-            // registrantID
-            // 
-            registrantID.HeaderText = "Registrant ID";
-            registrantID.MinimumWidth = 8;
-            registrantID.Name = "registrantID";
-            registrantID.Width = 150;
-            // 
-            // ticketType
-            // 
-            ticketType.HeaderText = "Type";
-            ticketType.MinimumWidth = 8;
-            ticketType.Name = "ticketType";
-            ticketType.Width = 125;
-            // 
-            // TicketAccess
-            // 
-            TicketAccess.HeaderText = "Access";
-            TicketAccess.MinimumWidth = 6;
-            TicketAccess.Name = "TicketAccess";
-            TicketAccess.Width = 125;
-            // 
-            // ticketPrice
-            // 
-            ticketPrice.HeaderText = "Price";
-            ticketPrice.MinimumWidth = 8;
-            ticketPrice.Name = "ticketPrice";
-            ticketPrice.Width = 150;
-            // 
-            // ticketQuantity
-            // 
-            ticketQuantity.HeaderText = "Quantity";
-            ticketQuantity.MinimumWidth = 8;
-            ticketQuantity.Name = "ticketQuantity";
-            ticketQuantity.Width = 125;
-            // 
-            // ticketAction
-            // 
-            ticketAction.HeaderText = "Actions";
-            ticketAction.MinimumWidth = 8;
-            ticketAction.Name = "ticketAction";
-            ticketAction.Width = 150;
             // 
             // btnAddEvent
             // 
@@ -200,6 +143,55 @@
             btnAddEvent.TabIndex = 47;
             btnAddEvent.Text = "Add ticket";
             btnAddEvent.Click += btnAddEvent_Click;
+            // 
+            // ticketID
+            // 
+            ticketID.HeaderText = "ID";
+            ticketID.MinimumWidth = 6;
+            ticketID.Name = "ticketID";
+            ticketID.Width = 150;
+            // 
+            // eventID
+            // 
+            eventID.HeaderText = "Event ID";
+            eventID.MinimumWidth = 8;
+            eventID.Name = "eventID";
+            eventID.Width = 150;
+            // 
+            // ticketType
+            // 
+            ticketType.HeaderText = "Type";
+            ticketType.MinimumWidth = 8;
+            ticketType.Name = "ticketType";
+            ticketType.Width = 125;
+            // 
+            // ticketPrice
+            // 
+            ticketPrice.HeaderText = "Price";
+            ticketPrice.MinimumWidth = 8;
+            ticketPrice.Name = "ticketPrice";
+            ticketPrice.Width = 150;
+            // 
+            // ticketQuantity
+            // 
+            ticketQuantity.HeaderText = "Quantity";
+            ticketQuantity.MinimumWidth = 8;
+            ticketQuantity.Name = "ticketQuantity";
+            ticketQuantity.Width = 125;
+            // 
+            // TicketStatus
+            // 
+            TicketStatus.HeaderText = "Status";
+            TicketStatus.MinimumWidth = 6;
+            TicketStatus.Name = "TicketStatus";
+            TicketStatus.Width = 125;
+            // 
+            // ticketAction
+            // 
+            ticketAction.HeaderText = "Actions";
+            ticketAction.MinimumWidth = 8;
+            ticketAction.Name = "ticketAction";
+            ticketAction.Width = 150;
             // 
             // ManageTicket
             // 
@@ -225,11 +217,10 @@
         private ComboBox filter;
         private DataGridViewTextBoxColumn ticketID;
         private DataGridViewTextBoxColumn eventID;
-        private DataGridViewTextBoxColumn registrantID;
         private DataGridViewTextBoxColumn ticketType;
-        private DataGridViewTextBoxColumn TicketAccess;
         private DataGridViewTextBoxColumn ticketPrice;
         private DataGridViewTextBoxColumn ticketQuantity;
+        private DataGridViewTextBoxColumn TicketStatus;
         private DataGridViewTextBoxColumn ticketAction;
     }
 }
