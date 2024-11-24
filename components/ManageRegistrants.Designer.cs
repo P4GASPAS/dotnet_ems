@@ -34,18 +34,16 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             searchRegistrant = new Guna.UI2.WinForms.Guna2TextBox();
-            filter = new ComboBox();
             lblTittle = new Label();
             registrantsData = new DataGridView();
+            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             ticketID = new DataGridViewTextBoxColumn();
-            eventID = new DataGridViewTextBoxColumn();
-            TicketIDRegistrant = new DataGridViewTextBoxColumn();
             registantFN = new DataGridViewTextBoxColumn();
             registantLN = new DataGridViewTextBoxColumn();
-            registantTicketype = new DataGridViewTextBoxColumn();
+            RegistrantEmail = new DataGridViewTextBoxColumn();
             RegistrantContactNumber = new DataGridViewTextBoxColumn();
+            RegistrantAddress = new DataGridViewTextBoxColumn();
             registantAction = new DataGridViewTextBoxColumn();
-            btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)registrantsData).BeginInit();
             SuspendLayout();
@@ -53,7 +51,6 @@
             // panel1
             // 
             panel1.Controls.Add(searchRegistrant);
-            panel1.Controls.Add(filter);
             panel1.Controls.Add(lblTittle);
             panel1.Controls.Add(registrantsData);
             panel1.Controls.Add(btnAddEvent);
@@ -76,7 +73,7 @@
             searchRegistrant.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             searchRegistrant.Font = new Font("Arial", 9F);
             searchRegistrant.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            searchRegistrant.Location = new Point(694, 27);
+            searchRegistrant.Location = new Point(772, 29);
             searchRegistrant.Margin = new Padding(3, 4, 3, 4);
             searchRegistrant.Name = "searchRegistrant";
             searchRegistrant.PasswordChar = '\0';
@@ -85,19 +82,6 @@
             searchRegistrant.ShadowDecoration.CustomizableEdges = customizableEdges2;
             searchRegistrant.Size = new Size(180, 34);
             searchRegistrant.TabIndex = 58;
-            // 
-            // filter
-            // 
-            filter.BackColor = Color.Azure;
-            filter.FlatStyle = FlatStyle.Flat;
-            filter.Font = new Font("Arial", 9F);
-            filter.FormattingEnabled = true;
-            filter.Items.AddRange(new object[] { "VIP", "Regular" });
-            filter.Location = new Point(880, 36);
-            filter.Name = "filter";
-            filter.Size = new Size(72, 25);
-            filter.TabIndex = 57;
-            filter.Text = "Filter";
             // 
             // lblTittle
             // 
@@ -116,7 +100,7 @@
             // 
             registrantsData.BackgroundColor = Color.Azure;
             registrantsData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            registrantsData.Columns.AddRange(new DataGridViewColumn[] { ticketID, eventID, TicketIDRegistrant, registantFN, registantLN, registantTicketype, RegistrantContactNumber, registantAction });
+            registrantsData.Columns.AddRange(new DataGridViewColumn[] { ticketID, registantFN, registantLN, RegistrantEmail, RegistrantContactNumber, RegistrantAddress, registantAction });
             registrantsData.Location = new Point(1, 84);
             registrantsData.Margin = new Padding(2);
             registrantsData.Name = "registrantsData";
@@ -124,62 +108,6 @@
             registrantsData.RowHeadersWidth = 62;
             registrantsData.Size = new Size(1009, 428);
             registrantsData.TabIndex = 53;
-            // 
-            // ticketID
-            // 
-            ticketID.HeaderText = "ID";
-            ticketID.MinimumWidth = 8;
-            ticketID.Name = "ticketID";
-            ticketID.Width = 150;
-            // 
-            // eventID
-            // 
-            eventID.HeaderText = "Event ID";
-            eventID.MinimumWidth = 8;
-            eventID.Name = "eventID";
-            eventID.Width = 150;
-            // 
-            // TicketIDRegistrant
-            // 
-            TicketIDRegistrant.HeaderText = "TIcket ID";
-            TicketIDRegistrant.MinimumWidth = 6;
-            TicketIDRegistrant.Name = "TicketIDRegistrant";
-            TicketIDRegistrant.Width = 125;
-            // 
-            // registantFN
-            // 
-            registantFN.HeaderText = "First Name";
-            registantFN.MinimumWidth = 8;
-            registantFN.Name = "registantFN";
-            registantFN.Width = 150;
-            // 
-            // registantLN
-            // 
-            registantLN.HeaderText = "Last Name";
-            registantLN.MinimumWidth = 8;
-            registantLN.Name = "registantLN";
-            registantLN.Width = 150;
-            // 
-            // registantTicketype
-            // 
-            registantTicketype.HeaderText = "Ticket Type";
-            registantTicketype.MinimumWidth = 8;
-            registantTicketype.Name = "registantTicketype";
-            registantTicketype.Width = 150;
-            // 
-            // RegistrantContactNumber
-            // 
-            RegistrantContactNumber.HeaderText = "Contact Number";
-            RegistrantContactNumber.MinimumWidth = 6;
-            RegistrantContactNumber.Name = "RegistrantContactNumber";
-            RegistrantContactNumber.Width = 125;
-            // 
-            // registantAction
-            // 
-            registantAction.HeaderText = "Actions";
-            registantAction.MinimumWidth = 8;
-            registantAction.Name = "registantAction";
-            registantAction.Width = 150;
             // 
             // btnAddEvent
             // 
@@ -200,6 +128,55 @@
             btnAddEvent.TabIndex = 52;
             btnAddEvent.Text = "Add Registrant";
             btnAddEvent.Click += btnAddEvent_Click;
+            // 
+            // ticketID
+            // 
+            ticketID.HeaderText = "ID";
+            ticketID.MinimumWidth = 8;
+            ticketID.Name = "ticketID";
+            ticketID.Width = 150;
+            // 
+            // registantFN
+            // 
+            registantFN.HeaderText = "First Name";
+            registantFN.MinimumWidth = 8;
+            registantFN.Name = "registantFN";
+            registantFN.Width = 150;
+            // 
+            // registantLN
+            // 
+            registantLN.HeaderText = "Last Name";
+            registantLN.MinimumWidth = 8;
+            registantLN.Name = "registantLN";
+            registantLN.Width = 150;
+            // 
+            // RegistrantEmail
+            // 
+            RegistrantEmail.HeaderText = "Email";
+            RegistrantEmail.MinimumWidth = 6;
+            RegistrantEmail.Name = "RegistrantEmail";
+            RegistrantEmail.Width = 125;
+            // 
+            // RegistrantContactNumber
+            // 
+            RegistrantContactNumber.HeaderText = "Contact Number";
+            RegistrantContactNumber.MinimumWidth = 6;
+            RegistrantContactNumber.Name = "RegistrantContactNumber";
+            RegistrantContactNumber.Width = 125;
+            // 
+            // RegistrantAddress
+            // 
+            RegistrantAddress.HeaderText = "Address";
+            RegistrantAddress.MinimumWidth = 6;
+            RegistrantAddress.Name = "RegistrantAddress";
+            RegistrantAddress.Width = 125;
+            // 
+            // registantAction
+            // 
+            registantAction.HeaderText = "Actions";
+            registantAction.MinimumWidth = 8;
+            registantAction.Name = "registantAction";
+            registantAction.Width = 150;
             // 
             // ManageRegistrants
             // 
@@ -223,14 +200,12 @@
         private Guna.UI2.WinForms.Guna2Button btnAddEvent;
         private Label lblTittle;
         private Guna.UI2.WinForms.Guna2TextBox searchRegistrant;
-        private ComboBox filter;
         private DataGridViewTextBoxColumn ticketID;
-        private DataGridViewTextBoxColumn eventID;
-        private DataGridViewTextBoxColumn TicketIDRegistrant;
         private DataGridViewTextBoxColumn registantFN;
         private DataGridViewTextBoxColumn registantLN;
-        private DataGridViewTextBoxColumn registantTicketype;
+        private DataGridViewTextBoxColumn RegistrantEmail;
         private DataGridViewTextBoxColumn RegistrantContactNumber;
+        private DataGridViewTextBoxColumn RegistrantAddress;
         private DataGridViewTextBoxColumn registantAction;
     }
 }
