@@ -37,8 +37,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(14, 21);
+            label1.BackColor = SystemColors.Desktop;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.LightSkyBlue;
+            label1.Location = new Point(47, 20);
             label1.Name = "label1";
             label1.Size = new Size(530, 27);
             label1.TabIndex = 0;
